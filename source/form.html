@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <section class="page-header__wrapper">
+        <a class="page-header__logo-image" href="index.html"><img class="page-header__logo-image" src="https://via.placeholder.com/75x22" alt="Сайт Pink"></a>
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button">Открыть меню</button>
+          <ul class="main-nav__list site-list">
+            <li class="main-nav__list site-list__item"><a href="index.html">Главная</a></li>
+            <li class="main-nav__list site-list__item"><a href="photo.html">Фотографии</a></li>
+            <li class="main-nav__list site-list__item"><a>Конкурс</a></li>
+            <li class="main-nav__list site-list__item"><a href="https://htmlacademy.ru/intensive/adaptive">Html academy</a></li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+    <main>
+      <section class="contest">
+        <h1 class="visually-hidden">Pink - Сайт фотоприложения для раскрашивания серых будней</h1>
+        <h2 class="contest__head">
+          Конкурс на самое
+          безбашенное
+          путешествие с Пинк
+        </h2>
+        <p class="contest__text">
+            Поделитесь своей историей и получите шанс
+            выиграть ценный приз — 1000 миль на вашу
+            бонусную карту!
+        </p>
+        <form action="html://echo.htmlacademy.ru" method="post">
+          <section class="full-name">
+            <p class="full-name__data">
+              <label class="full-name__name contest__head">
+                Фамилия:
+                <input type="text" placeholder="Укажите фамилию*">
+              </label>
+            </p>
+            <p class="full-name__data">
+              <label class="full-name__name contest__head">
+                Имя:
+                <input type="text" placeholder="Введите ваше имя*">
+              </label>
+            </p>
+            <p class="full-name__data">
+              <label class="full-name__name contest__head">
+                Отчество:
+                <input type="text" placeholder="Ну и отчество тоже">
+              </label>
+            </p>
+          </section>
+          <section class="checkbox">
+            <h3 class="checkbox__name contest__head">
+              Ваши безбашенные
+              достижения в путешествии
+            </h3>
+            <ul class="checkbox-list">
+              <li class="checkbox-list__item">
+                <input class="visually-hidden checkbox-list__check" id="check-shark" type="checkbox" checked>
+                <label for="check-shark">Сделал селфи с акулой</label>
+              </li>
+              <li class="checkbox-list__item">
+                <input class="visually-hidden checkbox-list__check" id="check-beach" type="checkbox" checked>
+                <label for="check-beach">Обгорел на пляже</label>
+              </li>
+              <li class="checkbox-list__item">
+                <input class="visually-hidden checkbox-list__check" id="check-noris" type="checkbox">
+                <label for="check-noris">Видел Чака Нориса</label>
+              </li>
+              <li class="checkbox-list__item">
+                <input class="visually-hidden checkbox-list__check" id="check-souvenir" type="checkbox">
+                <label for="check-souvenir">Накупил сувениров</label>
+              </li>
+              <li class="checkbox-list__item">
+                <input class="visually-hidden checkbox-list__check" id="check-tower" type="checkbox" checked>
+                <label for="check-tower">Удержал башню</label>
+              </li>
+              <li class="checkbox-list__item">
+                <input class="visually-hidden checkbox-list__check" id="check-hotel" type="checkbox">
+                <label for="check-hotel">Разгромил отель</label>
+              </li>
+            </ul>
+          </section>
+          <section class="contest-contact">
+            <p class="contest-contact__data">
+              <label class="contest-contact__number contest__head">
+                Номер телефона:
+                <input type="number" placeholder="Номер, пожалуйста">
+              </label>
+            </p>
+            <p class="contest-contact__data">
+              <label class="contest-contact__email contest__head">
+                Адрес почты:
+                <input type="email" placeholder="Введите почту*">
+              </label>
+            </p>
+          </section>
+          <section  class="contest-mobile">
+            <h3 class="contest-mobile__head contest__head">
+              С каким приложением
+              путешествовали?
+            </h3>
+            <ul class="contest-mobile__list">
+              <li class="contest-mobile__item">
+                <input class="visually-hidden" id="mobile-os" name="os" type="radio" checked>
+                <label for="mobile-os">Pink для iOS</label>
+              </li>
+              <li class="contest-mobile__item">
+                <input class="visually-hidden" id="mobile-android" name="os" type="radio">
+                <label for="mobile-android">Pink для Android</label>
+              </li>
+              <li class="contest-mobile__item">
+                <input class="visually-hidden" id="mobile-windows" name="os" type="radio">
+                <label for="mobile-windows">Windows Phone</label>
+              </li>
+            </ul>
+          </section>
+          <section>
+            <h3 class="contest-feedback contest-head">
+              Опишите свои эмоции
+            </h3>
+            <textarea name="comment" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          </section>
+          <div class="contest__button button">
+            <button class="" type="submit">Отправить форму</button>
+          </div>
+          <small class="contest-legend">
+            <sup class="contest-legend__status">*</sup> - обязательные поля
+          </small>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <a class="page-header__logo" href="index.html"><img class="page-header__logo-image page-footer" src="https://via.placeholder.com/75x22" alt="Сайт Pink"></a>
+      <ul class="footer-social">
+        <li class="footer-social__item">
+          <a class="footer-social__link">
+            <img class="footer-social__tw-img" src="https://via.placeholder.com/18x14" alt="Pink в twitter">
+          </a>
+        </li>
+        <li class="footer-social__item">
+          <a class="footer-social__link">
+            <img class="footer-social__fb-img" src="https://via.placeholder.com/18x14" alt="Pink в twitter">
+          </a>
+        </li>
+        <li class="footer-social__item">
+          <a class="footer-social__link">
+            <img class="footer-social__yt-img" src="https://via.placeholder.com/18x14" alt="Pink в twitter">
+          </a>
+        </li>
+      </ul>
+      <p class="footer-develop">
+        Разработано
+        <a class="footer-develop__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <img class="footer-develop__img-link" src="https://via.placeholder.com/27x34" alt="Ссылка на HTML Academy">
+        </a>
+      </p>
+    </footer>
+    <section class="popup-good popup">
+      <h2 class="popup-good__head">Ваша заявка отправлена</h2>
+      <p class="popup-good__text">
+        Cасибо за ваше участие, ваша заявка уже
+        поступила к нам. В ближайшее время мы
+        рассмотрим ее и
+        оповестим вас.
+      </p>
+      <div class="popup__close">
+        <button class="popup-good__button button">Закрыть окно</button>
+      </div>
+    </section>
+    <section class="popup-bad popup">
+        <h2 class="popup-bad__head">Что-то пошло не так!</h2>
+        <p class="popup-bad__text">
+          Проверьте поля, выделенные красным,
+          скорее всего вы забыли их заполнить
+        </p>
+        <div class="popup__close">
+          <button class="popup-bad__button button">Ок</button>
+        </div>
+      </section>
+  </body>
+</html>
