@@ -20,35 +20,33 @@
       </section>
     </header>
     <main>
-      <section class="contest">
+      <section class="page">
         <h1 class="visually-hidden">Pink - Сайт фотоприложения для раскрашивания серых будней</h1>
-        <h2 class="contest__head">
-          Конкурс на самое
-          безбашенное
-          путешествие с Пинк
+        <h2 class="page__title">
+          Конкурс на самое безбашенное путешествие с Пинк
         </h2>
+      </section>
+      <section class="contest">
         <p class="contest__text">
-            Поделитесь своей историей и получите шанс
-            выиграть ценный приз — 1000 миль на вашу
-            бонусную карту!
+          Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
         </p>
         <form action="html://echo.htmlacademy.ru" method="post">
           <section class="full-name">
             <p class="full-name__data">
               <label class="full-name__name contest__head">
-                Фамилия:
+                <span class="full-name__text">Фамилия:</span>
                 <input type="text" placeholder="Укажите фамилию*">
               </label>
             </p>
             <p class="full-name__data">
               <label class="full-name__name contest__head">
-                Имя:
+                <span class="full-name__text">Имя:</span>
                 <input type="text" placeholder="Введите ваше имя*">
               </label>
             </p>
             <p class="full-name__data">
               <label class="full-name__name contest__head">
-                Отчество:
+                <span class="full-name__text">Отчество:</span>
                 <input type="text" placeholder="Ну и отчество тоже">
               </label>
             </p>
@@ -61,27 +59,27 @@
             <ul class="checkbox-list">
               <li class="checkbox-list__item">
                 <input class="visually-hidden checkbox-list__check" id="check-shark" type="checkbox" checked>
-                <label for="check-shark">Сделал селфи с акулой</label>
+                <label class="checkbox-list__achievement" for="check-shark">Сделал селфи с акулой</label>
               </li>
               <li class="checkbox-list__item">
                 <input class="visually-hidden checkbox-list__check" id="check-beach" type="checkbox" checked>
-                <label for="check-beach">Обгорел на пляже</label>
+                <label class="checkbox-list__achievement" for="check-beach">Обгорел на пляже</label>
               </li>
               <li class="checkbox-list__item">
                 <input class="visually-hidden checkbox-list__check" id="check-noris" type="checkbox">
-                <label for="check-noris">Видел Чака Нориса</label>
+                <label class="checkbox-list__achievement" for="check-noris">Видел Чака Нориса</label>
               </li>
               <li class="checkbox-list__item">
                 <input class="visually-hidden checkbox-list__check" id="check-souvenir" type="checkbox">
-                <label for="check-souvenir">Накупил сувениров</label>
+                <label class="checkbox-list__achievement" for="check-souvenir">Накупил сувениров</label>
               </li>
               <li class="checkbox-list__item">
                 <input class="visually-hidden checkbox-list__check" id="check-tower" type="checkbox" checked>
-                <label for="check-tower">Удержал башню</label>
+                <label class="checkbox-list__achievement" for="check-tower">Удержал башню</label>
               </li>
               <li class="checkbox-list__item">
                 <input class="visually-hidden checkbox-list__check" id="check-hotel" type="checkbox">
-                <label for="check-hotel">Разгромил отель</label>
+                <label class="checkbox-list__achievement" for="check-hotel">Разгромил отель</label>
               </li>
             </ul>
           </section>
@@ -89,7 +87,7 @@
             <p class="contest-contact__data">
               <label class="contest-contact__number contest__head">
                 Номер телефона:
-                <input type="number" placeholder="Номер, пожалуйста">
+                <input type="tel" placeholder="Номер, пожалуйста">
               </label>
             </p>
             <p class="contest-contact__data">
@@ -104,18 +102,18 @@
               С каким приложением
               путешествовали?
             </h3>
-            <ul class="contest-mobile__list">
-              <li class="contest-mobile__item">
-                <input class="visually-hidden" id="mobile-os" name="os" type="radio" checked>
-                <label for="mobile-os">Pink для iOS</label>
+            <ul class="radio-list">
+              <li class="radio-list__item">
+                <input class="visually-hidden radio-list__check" id="mobile-os" name="os" type="radio" checked>
+                <label class="radio-list__achievement" for="mobile-os">Pink для iOS</label>
               </li>
-              <li class="contest-mobile__item">
-                <input class="visually-hidden" id="mobile-android" name="os" type="radio">
-                <label for="mobile-android">Pink для Android</label>
+              <li class="radio-list__item radio-list__check">
+                <input class="visually-hidden radio-list__check" id="mobile-android" name="os" type="radio">
+                <label class="radio-list__achievement" for="mobile-android">Pink для Android</label>
               </li>
-              <li class="contest-mobile__item">
-                <input class="visually-hidden" id="mobile-windows" name="os" type="radio">
-                <label for="mobile-windows">Windows Phone</label>
+              <li class="radio-list__item radio-list__check">
+                <input class="visually-hidden radio-list__check" id="mobile-windows" name="os" type="radio">
+                <label class="radio-list__achievement" for="mobile-windows">Windows Phone</label>
               </li>
             </ul>
           </section>
@@ -125,9 +123,7 @@
             </h3>
             <textarea name="comment" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </section>
-          <div class="contest__button button">
-            <button class="" type="submit">Отправить форму</button>
-          </div>
+          <button class="contest-button button" type="submit">Отправить форму</button>
           <small class="contest-legend">
             <sup class="contest-legend__status">*</sup> - обязательные поля
           </small>
@@ -160,21 +156,21 @@
         </a>
       </p>
     </footer>
-    <section class="popup-good popup">
-      <h2 class="popup-good__head">Ваша заявка отправлена</h2>
-      <p class="popup-good__text">
+    <section class="popup-request popup">
+      <h2 class="popup-request__title">Ваша заявка отправлена</h2>
+      <p class="popup-request__text">
         Cасибо за ваше участие, ваша заявка уже
         поступила к нам. В ближайшее время мы
         рассмотрим ее и
         оповестим вас.
       </p>
       <div class="popup__close">
-        <button class="popup-good__button button">Закрыть окно</button>
+        <button class="popup-request__button button">Закрыть окно</button>
       </div>
     </section>
-    <section class="popup-bad popup">
-        <h2 class="popup-bad__head">Что-то пошло не так!</h2>
-        <p class="popup-bad__text">
+    <section class="popup-request popup">
+        <h2 class="popup-request__title">Что-то пошло не так!</h2>
+        <p class="popup-request__text">
           Проверьте поля, выделенные красным,
           скорее всего вы забыли их заполнить
         </p>
