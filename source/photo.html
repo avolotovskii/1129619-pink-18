@@ -23,10 +23,10 @@
       <h1 class="visually-hidden">Pink - Сайт фотоприложения для раскрашивания серых будней</h1>
       <h2 class="page__title">
         Фотографии пользователей
-    </h2>
+      </h2>
     </section>
     <section class="photo">
-    <p class="photo-title">
+    <p class="photo__title">
       Взгляните на фотографии, которые
       выкладывают пользователи!
       Видите, как не хватает ваших?
@@ -48,7 +48,7 @@
           прямую трансляцию в перископе,
           задавайте свои вопросы!
         </p>
-        <button class="photo__like">Нравится: 215</button>
+        <button class="photo__like" type="button" >Нравится: 215</button>
       </li>
       <li class="photo__item">
         <img class="photo__panorama" src="https://via.placeholder.com/280x180" alt="Панорама дня">
@@ -64,7 +64,7 @@
           Вчера он на луну летал, сегодня в
           руки к нам попал
         </p>
-        <button class="photo__like">Нравится: 356</button>
+        <button class="photo__like" type="button">Нравится: 356</button>
       </li>
       <li class="photo__item">
         <img class="photo__panorama" src="https://via.placeholder.com/280x180" alt="Панорама дня">
@@ -79,7 +79,7 @@
         <p class="photo__text">
           Соседи будут рады!
         </p>
-        <button class="photo__like">Нравится: 666</button>
+        <button class="photo__like" type="button">Нравится: 666</button>
       </li>
       <li class="photo__item">
         <img class="photo__panorama" src="https://via.placeholder.com/280x180" alt="Панорама дня">
@@ -95,7 +95,7 @@
           Здесь могла быть ваша цитата о
           высоком и вечном
         </p>
-        <button class="photo__like">Нравится: 215</button>
+        <button class="photo__like" type="button">Нравится: 215</button>
       </li>
       <li class="photo__item">
         <img class="photo__panorama" src="https://via.placeholder.com/280x180" alt="Панорама дня">
@@ -110,7 +110,7 @@
         <p class="photo__text">
           Самая кубанская в мире!
         </p>
-        <button class="photo__like">Нравится: 4</button>
+        <button class="photo__like" type="button">Нравится: 4</button>
       </li>
       <li class="photo__item">
         <img class="photo__panorama" src="https://via.placeholder.com/280x180" alt="Панорама дня">
@@ -125,7 +125,7 @@
         <p class="photo__text">
           Где снег-то?
         </p>
-        <button class="photo__like">Нравится: 150</button>
+        <button class="photo__like" type="button">Нравится: 150</button>
       </li>
       <li class="photo__item">
         <img class="photo__panorama" src="https://via.placeholder.com/280x180" alt="Панорама дня">
@@ -140,7 +140,7 @@
         <p class="photo__text">
           Всем GM и взаимные лайки!
         </p>
-        <button class="photo__like">Нравится: 2560</button>
+        <button class="photo__like" type="button">Нравится: 2560</button>
       </li>
     </ul>
     <p class="photo__text">Затмите их всех!</p>
@@ -151,27 +151,26 @@
         <img class="put-out__image" src="https://via.placeholder.com/280x374" alt="Ваше фото">
         <ul class="put-out__list">
           <li class="put-out__item">
-            <img class="put-out__img put-out__crop" src="https://via.placeholder.com/44x44" alt="иконка фильта">
+            <button class="put-out__button put-out__crop" type="button"></button>
           </li>
           <li class="put-out__item">
-            <img class="put-out__img put-out__fill" src="https://via.placeholder.com/48x43" alt="иконка фильта">
+            <button class="put-out__button put-out__fill" type="button"></button>
           </li>
           <li class="put-out__item">
-            <img class="put-out__img put-out__contrast" src="https://via.placeholder.com/32x32" alt="иконка фильта">
+            <button class="put-out__button put-out__contrast" type="button"></button>
           </li>
         </ul>
         <section class="range-controls">
           <div class="range-conrols__scale">
-            <div class="range-controls__bar"></div>
-            <div class="range-controls__toggle"></div>
+            <input class="range-controls__bar" type="range">
           </div>
-          <button class="range-controls__button button" type="submit">Запостисть</button>
-          <button class="range-control__button-cancel button" type="reset">Отмена</button>
+          <button class="put-out__button-sent button" type="submit">Запостисть</button>
+          <button class="put-out__button-cancel button" type="reset">Отмена</button>
         </section>
-      <form method="GET" action="https://echo.htmlacademy.ru">
+      </form>
     </section>
-    <footer>
-      <a class="page-header__logo" href="index.html"><img class="page-header__logo-image page-footer" src="https://via.placeholder.com/75x22" alt="Сайт Pink"></a>
+    <footer class="page-footer">
+      <a class="page-footer__logo" href="index.html"><img class="page-footer__logo-image page-footer" src="https://via.placeholder.com/75x22" alt="Сайт Pink"></a>
       <ul class="footer-social">
         <li class="footer-social__item">
           <a class="footer-social__link">
@@ -180,12 +179,12 @@
         </li>
         <li class="footer-social__item">
           <a class="footer-social__link">
-            <img class="footer-social__fb-img" src="https://via.placeholder.com/18x14" alt="Pink в twitter">
+            <img class="footer-social__fb-img" src="https://via.placeholder.com/18x14" alt="Pink в facebook">
           </a>
         </li>
         <li class="footer-social__item">
           <a class="footer-social__link">
-            <img class="footer-social__yt-img" src="https://via.placeholder.com/18x14" alt="Pink в twitter">
+            <img class="footer-social__yt-img" src="https://via.placeholder.com/18x14" alt="Pink на youtube">
           </a>
         </li>
       </ul>
