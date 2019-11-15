@@ -1,0 +1,40 @@
+.photo {
+  font-family: "Open Sans", "Arial", sans-serif;
+}
+
+.photo__title {
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.photo__list {
+  list-style: none;
+}
+
+.photo-commentator {
+  background-color: #f2f2f2;
+}
+
+.photo-commentator__name {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.photo-commentator__date {
+  font-size: 12px;
+  line-height: 24px;
+}
+
+.photo__text {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.photo__like {
+  border: 0;
+  background-color: #f2f2f2;
+  color: #d22856;
+  font-size: 12px;
+  line-height: 24px;
+}
