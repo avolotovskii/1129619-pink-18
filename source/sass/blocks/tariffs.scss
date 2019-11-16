@@ -1,11 +1,9 @@
 .tariffs {
-  font-family: "Open Sans", "Arial", sans-serif;
   background-color: #f2f2f2;
 }
 
-.tariffs-title {
+.tariffs__title {
   font-size: 18px;
-  line-height: 30px;
 }
 
 .tariffs__list {
@@ -17,8 +15,9 @@
   color: #ffffff;
 }
 
-.tariffs-scroll {
+.tariffs__scroll {
   background-color: #ffffff;
+  list-style: none;
 }
 
 .tariffs__price {
@@ -26,10 +25,3 @@
   line-height: 30px;
   font-weight: 300;
 }
-
-.tariffs-scroll {
-  list-style: none;
-  font-size: 14px;
-  line-height: 30px;
-}
-
