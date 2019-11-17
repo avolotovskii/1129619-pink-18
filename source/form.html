@@ -3,18 +3,19 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
       <section class="page-header__wrapper">
         <a class="page-header__logo-image" href="index.html"><img class="page-header__logo-image" src="https://via.placeholder.com/75x22" alt="Сайт Pink"></a>
         <nav class="main-nav">
-          <button class="main-nav__toggle" type="button">Открыть меню</button>
+          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Меню</span></button>
           <ul class="main-nav__list site-list">
-            <li class="main-nav__list site-list__item"><a href="index.html">Главная</a></li>
-            <li class="main-nav__list site-list__item"><a href="photo.html">Фотографии</a></li>
-            <li class="main-nav__list site-list__item"><a>Конкурс</a></li>
-            <li class="main-nav__list site-list__item"><a href="https://htmlacademy.ru/intensive/adaptive">Html academy</a></li>
+            <li class="main-nav__list site-list__item"><a class="site-list__link" href="index.html">Главная</a></li>
+            <li class="main-nav__list site-list__item"><a class="site-list__link" href="photo.html">Фотографии</a></li>
+            <li class="main-nav__list site-list__item"><a class="site-list__link">Конкурс</a></li>
+            <li class="main-nav__list site-list__item"><a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">Html academy</a></li>
           </ul>
         </nav>
       </section>
@@ -33,26 +34,26 @@
         <form action="html://echo.htmlacademy.ru" method="post">
           <section class="full-name">
             <p class="full-name__data">
-              <label class="full-name__name contest__head">
+              <label class="full-name__name contest__title">
                 <span class="full-name__text">Фамилия:</span>
                 <input class="full-name__input" type="text" placeholder="Укажите фамилию*">
               </label>
             </p>
             <p class="full-name__data">
-              <label class="full-name__name contest__head">
+              <label class="full-name__name contest__title">
                 <span class="full-name__text">Имя:</span>
                 <input class="full-name__input" type="text" placeholder="Введите ваше имя*">
               </label>
             </p>
             <p class="full-name__data">
-              <label class="full-name__name contest__head">
+              <label class="full-name__name contest__title">
                 <span class="full-name__text">Отчество:</span>
                 <input class="full-name__input" type="text" placeholder="Ну и отчество тоже">
               </label>
             </p>
           </section>
           <section class="checkbox">
-            <h3 class="checkbox__name contest__head">
+            <h3 class="checkbox__name contest__title">
               Ваши безбашенные
               достижения в путешествии
             </h3>
@@ -85,15 +86,15 @@
           </section>
           <section class="contest-contact">
             <p class="contest-contact__data">
-              <label class="contest-contact__number contest__head">
+              <label class="contest-contact__number contest__title">
                 Номер телефона:
-                <input class="contest-contact__input" type="tel" placeholder="Номер, пожалуйста">
+                <input class="contest-contact__input full-name__input" type="tel" placeholder="Номер, пожалуйста">
               </label>
             </p>
             <p class="contest-contact__data">
-              <label class="contest-contact__email contest__head">
+              <label class="contest-contact__email contest__title">
                 Адрес почты:
-                <input class="contest-contact__input" type="email" placeholder="Введите почту*">
+                <input class="contest-contact__input full-name__input" type="email" placeholder="Введите почту*">
               </label>
             </p>
           </section>
@@ -121,38 +122,38 @@
             <h3 class="contest-feedback__title contest__title">
               Опишите свои эмоции
             </h3>
-            <textarea name="comment" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+            <textarea class="contest-feedback__comment" name="comment" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </section>
-          <button class="contest-button button" type="submit">Отправить форму</button>
-          <small class="contest-legend">
-            <sup class="contest-legend__status">*</sup> - обязательные поля
+          <button class="contest-feedback__button button" type="submit">Отправить форму</button>
+          <small class="contest-feedback__legend">
+            <sup class="contest-feedback__status">*</sup> &mdash; обязательные поля
           </small>
         </form>
       </section>
     </main>
     <footer class="page-footer">
       <a class="page-footer__logo" href="index.html"><img class="page-footer__logo-image" src="https://via.placeholder.com/75x22" alt="Сайт Pink"></a>
-      <ul class="footer-social">
-        <li class="footer-social__item">
-          <a class="footer-social__link">
-            <img class="footer-social__tw-img" src="https://via.placeholder.com/18x14" alt="Pink в twitter">
+      <ul class="page-footer__social">
+        <li class="page-footer__social page-footer__item">
+          <a class="page-footer__social page-footer__link">
+            <img class="page-footer__social page-footer__tw-img" src="https://via.placeholder.com/18x14" alt="Pink в twitter">
           </a>
         </li>
-        <li class="footer-social__item">
-          <a class="footer-social__link">
-            <img class="footer-social__fb-img" src="https://via.placeholder.com/18x14" alt="Pink в facebook">
+        <li class="page-footer__social page-footer__item">
+          <a class="page-footer__social page-footer__link">
+            <img class="page-footer__social page-footer__fb-img" src="https://via.placeholder.com/18x14" alt="Pink в facebook">
           </a>
         </li>
-        <li class="footer-social__item">
-          <a class="footer-social__link">
-            <img class="footer-social__yt-img" src="https://via.placeholder.com/18x14" alt="Pink на youtube">
+        <li class="page-footer__social page-footer__item">
+          <a class="page-footer__social page-footer__link">
+            <img class="page-footer__social page-footer__yt-img" src="https://via.placeholder.com/18x14" alt="Pink на youtube">
           </a>
         </li>
       </ul>
-      <p class="footer-develop">
+      <p class="page-footer__develop">
         Разработано
-        <a class="footer-develop__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <img class="footer-develop__img-link" src="https://via.placeholder.com/27x34" alt="Ссылка на HTML Academy">
+        <a class="page-footer__develop page-footer__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <img class="page-footer__develop page-footer__img-link" src="https://via.placeholder.com/27x34" alt="Ссылка на HTML Academy">
         </a>
       </p>
     </footer>
@@ -165,7 +166,7 @@
         оповестим вас.
       </p>
       <div class="popup__close">
-        <button class="popup-request__button button">Закрыть окно</button>
+        <button class="contest-button button">Закрыть окно</button>
       </div>
     </section>
     <section class="popup-request popup">
@@ -175,7 +176,7 @@
           скорее всего вы забыли их заполнить
         </p>
         <div class="popup__close">
-          <button class="popup-bad__button button">Ок</button>
+          <button class="contest-button button">Ок</button>
         </div>
       </section>
   </body>

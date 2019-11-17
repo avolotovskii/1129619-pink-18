@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
@@ -11,10 +12,10 @@
         <nav class="main-nav">
           <button class="main-nav__toggle" type="button"><span class="visually-hidden">Меню</span></button>
           <ul class="main-nav__list site-list">
-            <li class="site-list__item"><a>Главная</a></li>
-            <li class="site-list__item"><a href="photo.html">Фотографии</a></li>
-            <li class="site-list__item"><a href="form.html">Конкурс</a></li>
-            <li class="site-list__item"><a href="https://htmlacademy.ru/intensive/adaptive">Html academy</a></li>
+            <li class="site-list__item"><a class="site-list__link">Главная</a></li>
+            <li class="site-list__item"><a class="site-list__link" href="photo.html">Фотографии</a></li>
+            <li class="site-list__item"><a class="site-list__link" href="form.html">Конкурс</a></li>
+            <li class="site-list__item"><a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">Html academy</a></li>
           </ul>
         </nav>
       </section>
@@ -132,31 +133,37 @@
       <section class="tariffs slider">
         <ul class="tariffs__list slider__list">
           <li class="tariffs__item slider__item">
-            <h3 class="tariffs__title">База</h3>
-            <span class="tariffs__price">1,99 usd</span>
-            <ul class="tariffs-scroll">
-              <li class="tariffs-scroll__item">Розовый фильтр</li>
-              <li class="tariffs-scroll__item">Смайлики</li>
-              <li class="tariffs-scroll__item">Комментарии</li>
+            <div class="tariffs__head">
+              <h3 class="tariffs__title">База</h3>
+              <span class="tariffs__price">1,99 usd</span>
+            </div>
+            <ul class="tariffs__scroll">
+              <li class="tariffs__scroll tariffs__item">Розовый фильтр</li>
+              <li class="tariffs__scroll tariffs__item">Смайлики</li>
+              <li class="tariffs__scroll tariffs__item">Комментарии</li>
             </ul>
           </li>
           <li class="tariffs__item slider__item">
-            <div class="tariffs__flag tariffs__flag--bestseller"><span class="visually-hidden">Хит</span></div>
-            <h3 class="tariffs__title">Стандарт</h3>
-            <span class="tariffs__price">3,99 usd</span>
-            <ul class="tariffs-scroll">
-              <li class="tariffs-scroll__item">Розовый фильтр</li>
-              <li class="tariffs-scroll__item">Смайлики</li>
-              <li class="tariffs-scroll__item">Комментарии</li>
+            <div class="tariffs__head">
+              <div class="tariffs__flag tariffs__flag--bestseller"><span class="visually-hidden">Хит</span></div>
+              <h3 class="tariffs__title">Стандарт</h3>
+              <span class="tariffs__price">3,99 usd</span>
+            </div>
+            <ul class="tariffs__scroll">
+              <li class="tariffs__scroll tariffs__item">Розовый фильтр</li>
+              <li class="tariffs__scroll tariffs__item">Смайлики</li>
+              <li class="tariffs__scroll tariffs__item">Комментарии</li>
             </ul>
           </li>
           <li class="tariffs__item slider__item">
-            <h3 class="tariffs__title">Анлим</h3>
-            <span class="tariffs__price">9,99 usd</span>
-            <ul class="tariffs-scroll">
-              <li class="tariffs-scroll__item">Розовый фильтр</li>
-              <li class="tariffs-scroll__item">Смайлики</li>
-              <li class="tariffs-scroll__item">Комментарии</li>
+            <div class="tariffs__head">
+              <h3 class="tariffs__title">Анлим</h3>
+              <span class="tariffs__price">9,99 usd</span>
+            </div>
+            <ul class="tariffs__scroll">
+              <li class="tariffs__scroll tariffs__item">Розовый фильтр</li>
+              <li class="tariffs__scroll tariffs__item">Смайлики</li>
+              <li class="tariffs__scroll tariffs__item">Комментарии</li>
             </ul>
           </li>
         </ul>
