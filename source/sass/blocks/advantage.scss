@@ -1,14 +1,33 @@
 .advantage {
   background-color: #f2f2f2;
   list-style: none;
+  text-align: center;
 }
 
 .advantage__title {
   font-size: 18px;
-  line-height: 10px;
+  line-height: 30px;
 }
 
 .advantage__text {
   font-size: 14px;
   line-height: 24px;
+}
+
+@media (min-width: $tablet-width) {
+  .advantage {
+    text-align: left;
+    display: flex;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantage {
+    flex-direction: row;
+  }
+
+  .advantage__item {
+    width: 245px;
+    text-align: center;
+  }
 }

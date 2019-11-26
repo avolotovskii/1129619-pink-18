@@ -1,0 +1,10 @@
+.contest-contact {
+  @include wrapper;
+}
+
+@media (min-width: $desktop-width) {
+  .contest-contact {
+    display: flex;
+    justify-content: space-around;
+  }
+}

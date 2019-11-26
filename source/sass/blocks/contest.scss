@@ -1,6 +1,27 @@
+.contest {
+  display: flex;
+  flex-direction: column;
+}
+
 .contest__title {
   color: #d22856;
   line-height: 18px;
   text-transform: uppercase;
   font-weight: 300;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.contest__text {
+  text-align: center;
+  margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .contest__title {
+    flex-direction: row;
+    align-items: center;
+    margin-right: 17px;
+  }
 }

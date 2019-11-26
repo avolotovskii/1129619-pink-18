@@ -1,11 +1,27 @@
+.reviews {
+  @include wrapper;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .reviews__list {
   list-style: none;
+  padding: 0;
+  overflow: hidden;
+  height: 280px;
+  margin: 0 auto;
 }
 
 .reviews__name {
   font-size: 18px;
   line-height: 30px;
   text-align: center;
+}
+
+.reviews__toggles {
+  padding: 0;
+  margin: 0 auto;
 }
 
 .reviews__text {

@@ -1,0 +1,20 @@
+.news {
+  @include wrapper;
+  display: none;
+}
+
+.news__tittle {
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.news__link {
+  color: #d22856;
+}
+
+@media (min-width: $tablet-width) {
+  .news {
+    display: flex;
+    align-items: center;
+  }
+}

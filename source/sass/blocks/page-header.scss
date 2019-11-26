@@ -1,4 +1,44 @@
 .page-header {
+  @include wrapper;
   background-color: #283645;
   font-weight: 700;
+  padding-top: 22px;
+}
+
+.page-header__logo-tablet,
+.page-header__logo-desktop {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header__logo-mobile,
+  .page-header__logo-desktop {
+    display: none;
+  }
+
+  .page-header__logo-tablet {
+    display: block;
+  }
+
+  .page-header__wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__logo-mobile,
+  .page-header__logo-tablet {
+    display: none;
+  }
+
+  .page-header__logo-desktop {
+    display: block;
+  }
+
+  .page-header__wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
 }

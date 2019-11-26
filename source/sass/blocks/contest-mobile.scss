@@ -1,0 +1,10 @@
+.contest-mobile__wrapper {
+  @include wrapper;
+  background-color: #f2f2f2;
+}
+
+@media (min-width: $tablet-width) {
+  .contest-mobile {
+    order: -1;
+  }
+}

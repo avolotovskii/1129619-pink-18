@@ -1,4 +1,5 @@
 @import "normalize";
+@import "mixins/wrapper";
 @import "variables";
 @import "fonts";
 @import "visually-hidden";
@@ -26,3 +27,8 @@
 @import "blocks/popup-request";
 @import "blocks/photo-commentator";
 @import "blocks/checkbox-list";
+@import "blocks/contest-contact";
+@import "blocks/news";
+@import "blocks/contest-mobile";
+@import "blocks/contest__form";
+@import "blocks/range-controls";

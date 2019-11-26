@@ -1,0 +1,16 @@
+.range-controls__bar {
+  flex-direction: column;
+  display: none;
+}
+
+.range-controls__bar--active {
+  display: flex;
+  order: -1;
+}
+
+@media (min-width: $tablet-width) {
+  .range-controls__bar {
+    display: flex;
+    flex-direction: column;
+  }
+}

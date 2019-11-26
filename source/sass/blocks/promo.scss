@@ -1,3 +1,7 @@
+.promo {
+  margin: 0 auto;
+}
+
 .promo_item {
   list-style: none;
 }
@@ -5,12 +9,94 @@
 .promo__text {
   font-size: 24px;
   line-height: 36px;
+  margin: 0 0 37px 0;
+  text-align: center;
+}
+
+.promo__img {
+  margin: 0 auto;
 }
 
 .promo__head {
+  @include wrapper;
   background-color: #ffffff;
 }
 
 .promo__advantages {
+  @include wrapper;
   background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+}
+
+.promo__list {
+  list-style: none;
+  padding: 0;
+}
+
+.promo__list-tablet,
+.promo__list-desktop {
+  display: none;
+}
+
+.promo__list-mobile {
+  display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .promo__text {
+    margin: 0;
+  }
+
+  .promo__advantage {
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    width: 300px;
+  }
+
+  .promo__advantages {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .promo__img {
+    width: 350px;
+  }
+
+  .promo__list-mobile,
+  .promo__list-desktop {
+    display: none;
+  }
+
+  .promo__list-tablet {
+    display: block;
+    order: -1;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo__text {
+    margin: 0;
+  }
+
+  .promo__advantages {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .promo__advantage {
+    width: 100%;
+  }
+
+  .promo__list-mobile,
+  .promo__list-tablet {
+    display: none;
+  }
+
+  .promo__list-desktop {
+    display: flex;
+    order: -1;
+  }
 }

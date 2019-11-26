@@ -1,9 +1,12 @@
 .put-out {
+  @include wrapper;
   background-color: #f2f2f2;
 }
 
 .put-out__list {
   list-style: none;
+  display: flex;
+  flex-direction: row;
 }
 
 .put-out__button-sent {
@@ -14,4 +17,63 @@
 .put-out__button-cancel {
   color: rgba(#283645, 0.1);
   border-color: rgba(#283645, 0.1);
+}
+
+.put-out__button--active,
+.put-out__button {
+  margin: 0 auto;
+  display: block;
+}
+
+.put-out__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.put-out__button--active {
+  order: -1;
+}
+
+.put-out__buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.put-out__img-tablet,
+.put-out__img-desktop {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .put-out__img-mobile,
+  .put-out__img-desktop {
+    display: none;
+  }
+
+  .put-out__img-tablet {
+    display: block;
+  }
+
+  .put-out__form {
+    display: flex;
+  }
+
+  .put-out__item {
+    display: flex;
+  }
+
+  .put-out__list {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .put-out__img-mobile,
+  .put-out__img-tablet {
+    display: none;
+  }
+
+  .put-out__img-desktop {
+    display: block;
+  }
 }

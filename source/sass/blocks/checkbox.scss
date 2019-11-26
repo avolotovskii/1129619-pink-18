@@ -1,3 +1,7 @@
 .checkbox {
   background-color: #f2f2f2;
 }
+
+.checkbox__wrapper {
+  @include wrapper;
+}
