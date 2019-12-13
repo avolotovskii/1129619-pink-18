@@ -1,5 +1,4 @@
 .contacts {
-  @include wrapper;
   text-align: center;
 }
 
@@ -28,8 +27,7 @@
 }
 
 .contacts__item {
-  display: flex;
-  flex-direction: column;
+  display: block;
 }
 
 .contacts__link-tablet,
@@ -45,7 +43,7 @@
 
   .contacts__list {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
   }
 

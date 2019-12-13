@@ -26,11 +26,7 @@
 
 .photo__item {
   @include wrapper;
-  width: 300px;
-}
-
-.photo-commentator {
-  @include wrapper;
+  width: 320px;
 }
 
 .photo__panorama-tablet,
@@ -40,6 +36,10 @@
 
 .photo__img-tablet,
 .photo__img-desktop {
+  display: none;
+}
+
+.photo__like--tablet {
   display: none;
 }
 
@@ -66,13 +66,31 @@
   .photo__panorama-tablet {
     display: block;
   }
+
+  .photo__item {
+    margin-bottom: 20px;
+  }
+
+  .photo__text {
+    margin: 0;
+  }
+
+  .photo__like--tablet {
+    display: block;
+    border: 0;
+    background-color: #f2f2f2;
+    color: #d22856;
+    font-size: 12px;
+    line-height: 24px;
+    margin-left: 330px;
+  }
+
+  .photo__like {
+    display: none;
+  }
 }
 
 @media (min-width: $desktop-width) {
-  .photo {
-    @include wrapper;
-  }
-
   .photo__panorama-mobile,
   .photo__panorama-tablet {
     display: none;

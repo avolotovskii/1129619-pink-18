@@ -17,6 +17,10 @@
 
 
 @media (min-width: $tablet-width) {
+  .full-name {
+    order: -5;
+  }
+
   .full-name__text {
     margin-right: 17px;
   }

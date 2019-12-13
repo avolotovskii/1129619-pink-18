@@ -2,11 +2,13 @@
   list-style: none;
   text-align: center;
   padding: 0;
-  margin: 0;
+  margin: 0 -20px;
+  display: none;
 }
 
 .site-list__item {
   border: 1px solid #000000;
+  border-top: 1px solid #485461;
   width: 100%;
 }
 
@@ -21,6 +23,7 @@
     font-size: 18px;
     line-height: 18px;
     justify-content: flex-end;
+    min-width: 793px;
   }
 
   .site-list__link {

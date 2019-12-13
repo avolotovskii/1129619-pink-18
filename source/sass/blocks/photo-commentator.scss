@@ -1,4 +1,10 @@
 .photo-commentator {
+  padding: 0 20px;
+  background-color: #f2f2f2;
+}
+
+.photo-commentator--pan {
+  @include wrapper;
   background-color: #f2f2f2;
 }
 
@@ -10,4 +16,10 @@
 .photo-commentator__date {
   font-size: 12px;
   line-height: 24px;
+}
+
+@media (min-width: $tablet-width) {
+  .photo-commentator__block-tablet {
+    display: flex;
+  }
 }

@@ -1,11 +1,13 @@
 .advertising {
-  @include wrapper;
-  background-image: url("/img/bg-back-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: 50% 0;
   background-color: #283645;
   margin: 0 auto;
   text-align: center;
+}
+
+.adversting__background {
+  background-image: url("/img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   flex-direction: column;
 }
@@ -14,11 +16,26 @@
   font-size: 24px;
   line-height: 30px;
   color: #ffffff;
-  min-height: 171px;
   text-align: center;
   padding: 35px 0 57px 0;
   margin: 0;
   order: -2;
+}
+
+.adversting__tablet-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.adversting__background::before {
+  content: "";
+  display: block;
+  background-image: url("/img/iphone-hand-mobile@1x.png");
+  width: 260px;
+  height: 286px;
+  background-repeat: no-repeat;
+  order: 1;
+  margin: auto;
 }
 
 .advertising__list {
@@ -51,25 +68,38 @@
   order: -1;
 }
 
-.advertising__tablet-img,
-.advertising__desktop-img {
-  display: none;
-}
-
 @media (min-width: $tablet-width) {
   .advertising {
     background-image: url("/img/bg-back-tablet@1x.jpg");
-    background-repeat: no-repeat;
-    flex-direction: row;
+    background-size: cover;
+    min-height: 626px;
+    text-align: start;
   }
 
-  .advertising__img {
-    order: 1;
+  .advertising__head {
+    padding: 0 0 0 55px;
   }
 
   .adversting__tablet-block {
     width: 300px;
-    z-index: 1;
+    padding-top: 100px;
+    padding-right: 20px;
+  }
+
+  .adversting__background {
+    background-image: none;
+  }
+
+  .adversting__background::before {
+    content: "";
+    position: absolute;
+    background-image: url("/img/iphone-hand-tablet@1x.png");
+    width: 675px;
+    height: 545px;
+    background-repeat: no-repeat;
+    order: 1;
+    right: 0;
+    bottom: 0;
   }
 
   .advertising__tablet-img {
@@ -78,21 +108,28 @@
     margin-left: -295px;
   }
 
-  .advertising__mobile-img,
-  .advertising__desktop-img {
-    display: none;
+  .advertising__button,
+  .advertising__list,
+  .advertising__comment {
+    z-index: 1;
   }
 }
 
 @media (min-width: $desktop-width) {
   .advertising {
     background-image: url("/img/bg-back-desktop@1x.jpg");
-    background-repeat: no-repeat;
+    min-height: 658px;
   }
 
-  .advertising__tablet-img {
-    display: block;
-    width: 100%;
-    margin-left: -295px;
+  .adversting__background::before {
+    content: "";
+    position: absolute;
+    background-image: url("/img/iphone-hand-desktop@1x.png");
+    width: 900px;
+    height: 645px;
+    background-repeat: no-repeat;
+    order: 1;
+    right: 150px;
+    bottom: 0;
   }
 }

@@ -25,3 +25,17 @@
   line-height: 30px;
   text-transform: uppercase;
 }
+
+@media (min-width: $tablet-width) {
+  .contest-feedback {
+    border: 1px solid #e5e5e5;
+  }
+
+  .contest-feedback__title {
+    margin-top: -10px;
+  }
+
+  .contest-feedback__tablet-form {
+    display: flex;
+  }
+}
