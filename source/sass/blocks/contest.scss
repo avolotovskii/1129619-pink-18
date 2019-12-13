@@ -1,7 +1,3 @@
-.contest {
-
-}
-
 .contest__title {
   color: #d22856;
   line-height: 18px;
@@ -26,7 +22,7 @@
   .contest {
     display: flex;
     flex-direction: column;
-    }
+  }
 
   .contest__title {
     align-items: center;
@@ -38,7 +34,7 @@
 
 @media (min-width: $desktop-width) {
   .contest {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
   }
 }
