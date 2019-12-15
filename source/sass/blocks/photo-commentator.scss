@@ -1,11 +1,13 @@
 .photo-commentator {
   padding: 0 20px;
   background-color: #f2f2f2;
+  margin-top: -10px;
 }
 
 .photo-commentator--pan {
   @include wrapper;
   background-color: #f2f2f2;
+  margin: -10px 20px 0 20px;
 }
 
 .photo-commentator__name {
@@ -21,5 +23,15 @@
 @media (min-width: $tablet-width) {
   .photo-commentator__block-tablet {
     display: flex;
+    position: relative;
+  }
+
+  .photo-commentator {
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    flex-grow: 1;
   }
 }

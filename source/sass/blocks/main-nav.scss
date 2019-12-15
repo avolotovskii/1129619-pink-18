@@ -56,10 +56,6 @@
   display: none;
 }
 
-.main-nav--closed .user-list__item {
-  display: none;
-}
-
 
 @media (min-width: $desktop-width) {
   .main-nav {
@@ -80,5 +76,9 @@
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
+  }
+
+  .main-nav--closed .site-list__item {
+    display: block;
   }
 }

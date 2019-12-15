@@ -4,6 +4,10 @@
   text-align: center;
 }
 
+.advertising__wrapper {
+  @include wrapper;
+}
+
 .adversting__background {
   background-image: url("/img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
@@ -121,6 +125,10 @@
     min-height: 658px;
   }
 
+  .advertising__wrapper {
+    position: relative;
+  }
+
   .adversting__background::before {
     content: "";
     position: absolute;
@@ -129,7 +137,7 @@
     height: 645px;
     background-repeat: no-repeat;
     order: 1;
-    right: 150px;
+    right: 27px;
     bottom: 0;
   }
 }
