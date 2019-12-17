@@ -48,7 +48,7 @@
   }
 
   .contacts__item {
-    width: 312px;
+    width: 50%;
   }
 
   .contacts__link-mobile,
@@ -78,5 +78,9 @@
 
   .contacts__link-desktop {
     display: block;
+  }
+
+  .contacts__item {
+    width: 300px;
   }
 }

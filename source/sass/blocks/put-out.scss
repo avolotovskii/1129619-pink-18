@@ -9,9 +9,10 @@
 .put-out__list {
   list-style: none;
   display: flex;
-  padding: 0;
-  margin: 0 17px 40px 17px;
+  padding: 0 0 40px 0;
+  margin: 0 17px;
   position: relative;
+  align-items: center;
 }
 
 .put-out__button-sent {
@@ -29,6 +30,8 @@
 .put-out__button {
   margin: 0 auto;
   display: block;
+  border: 0;
+  background-color: transparent;
 }
 
 .put-out__item {
@@ -41,8 +44,7 @@
   margin-bottom: 20px;
   display: flex;
   flex-direction: column;
-  position: absolute;
-  top: 50px;
+  fill: #b5b8bd;
 }
 
 .put-out__button-sent,
@@ -52,6 +54,7 @@
 
 .put-out__button--active {
   order: -1;
+  fill: #d22856;
 }
 
 .put-out__form {
@@ -75,6 +78,7 @@
 
   .put-out__img-tablet {
     display: block;
+    width: 50%;
   }
 
   .put-out__form {
@@ -83,15 +87,32 @@
 
   .put-out__list {
     flex-direction: column;
+    margin: 0;
   }
 
   .put-out__item {
     margin-right: 20px;
+    flex-direction: row;
+    border-bottom: 1px solid #dfdfdf;
   }
 
   .put-out__right-block {
-    width: 100%;
-    margin-left: 45px;
+    width: 50%;
+    margin-left: 20px;
+  }
+
+  .put-out__button-img {
+    fill: #d22856;
+    width: 23px;
+    height: 23px;
+  }
+
+  .put-out__button--active,
+  .put-out__button {
+    margin: 0;
+    display: block;
+    border: 0;
+    background-color: transparent;
   }
 }
 
@@ -111,5 +132,14 @@
 
   .put-out__button-cancel {
     margin-left: 45px;
+  }
+
+  .put-out__right-block {
+    margin-left: 90px;
+  }
+
+  .put-out__button-img {
+    width: 45px;
+    height: 45px;
   }
 }

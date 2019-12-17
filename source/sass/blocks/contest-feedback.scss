@@ -1,7 +1,3 @@
-.contest-feedback {
-  @include wrapper;
-}
-
 .contest-feedback__comment {
   width: 100%;
   height: 190px;
@@ -15,7 +11,7 @@
   font-size: 18px;
   line-height: 30px;
   text-transform: uppercase;
-  width: 280px;
+  width: 100%;
   padding: 8px 0;
   margin: 0 auto;
 }
@@ -31,11 +27,30 @@
     border: 1px solid #e5e5e5;
   }
 
+  .contest-feedback__button {
+    width: auto;
+    margin: 0;
+  }
+
   .contest-feedback__title {
     margin-top: -10px;
   }
 
   .contest-feedback__tablet-form {
     display: flex;
+    width: 100%;
+    justify-content: space-between;
   }
+
+  .contest-feedback__status-hidden {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contest-feedback__status-hidden {
+    display: inline-block;
+  }
+
+
 }

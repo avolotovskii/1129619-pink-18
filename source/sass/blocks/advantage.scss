@@ -59,6 +59,7 @@
 @media (min-width: $desktop-width) {
   .advantage {
     flex-direction: row;
+    justify-content: center;
   }
 
   .advantage__item {

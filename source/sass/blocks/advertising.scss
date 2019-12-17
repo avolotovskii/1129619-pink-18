@@ -14,6 +14,7 @@
   background-size: cover;
   display: flex;
   flex-direction: column;
+  margin: 0 -20px;
 }
 
 .advertising__head {
@@ -39,7 +40,7 @@
   height: 286px;
   background-repeat: no-repeat;
   order: 1;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .advertising__list {
@@ -76,18 +77,20 @@
   .advertising {
     background-image: url("/img/bg-back-tablet@1x.jpg");
     background-size: cover;
+    width: 100%;
     min-height: 626px;
-    text-align: start;
+    text-align: left;
+    margin: 0 auto;
+    position: relative;
   }
 
   .advertising__head {
-    padding: 0 0 0 55px;
+    padding: 0 100px 0 90px;
   }
 
   .adversting__tablet-block {
     width: 300px;
     padding-top: 100px;
-    padding-right: 20px;
   }
 
   .adversting__background {
@@ -117,16 +120,21 @@
   .advertising__comment {
     z-index: 1;
   }
+
+  .advertising__button {
+    width: 100%;
+    text-align: center;
+  }
+
+  .advertising__comment {
+    text-align: center;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .advertising {
     background-image: url("/img/bg-back-desktop@1x.jpg");
-    min-height: 658px;
-  }
-
-  .advertising__wrapper {
-    position: relative;
+    background-size: cover;
   }
 
   .adversting__background::before {

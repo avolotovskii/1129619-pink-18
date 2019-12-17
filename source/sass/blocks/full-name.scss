@@ -1,11 +1,7 @@
-.full-name {
-  @include wrapper;
-}
-
 .full-name__text {
   color: #d22856;
   text-transform: uppercase;
-  text-align: start;
+  text-align: left;
 }
 
 .full-name__input {
@@ -23,5 +19,11 @@
 
   .full-name__text {
     margin-right: 17px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .full-name {
+    width: 45%;
   }
 }

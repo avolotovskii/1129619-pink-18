@@ -6,11 +6,20 @@
 .range-controls__bar--active {
   display: flex;
   order: -1;
+  position: absolute;
+  top: 77px;
+  width: 100%;
 }
 
 @media (min-width: $tablet-width) {
   .range-controls__bar {
     display: flex;
     flex-direction: column;
+    width: 100%;
+  }
+
+  .range-controls__bar--active {
+    position: relative;
+    top: 0;
   }
 }

@@ -12,6 +12,13 @@
     font-weight: 300;
     margin-top: -10px;
   }
+
+  .contest-contact__number,
+  .contest-contact__email {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    padding: 0 60px;
+  }
 }
 
 @media (min-width: $desktop-width) {

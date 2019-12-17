@@ -67,5 +67,7 @@
   .page-footer__develop {
     width: 33%;
     text-align: right;
+    display: flex;
+    justify-content: flex-end;
   }
 }
