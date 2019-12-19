@@ -4,11 +4,11 @@
 }
 
 .range-controls__bar--active {
-  display: flex;
-  order: -1;
   position: absolute;
-  top: 77px;
+  left: 0;
   width: 100%;
+  bottom: 10px;
+  display: block;
 }
 
 @media (min-width: $tablet-width) {

@@ -5,12 +5,49 @@
 @media (min-width: $tablet-width) {
   .contest-mobile {
     order: -4;
-    border: 1px solid #e5e5e5;
+    border: 2px solid #e5e5e5;
+    border-top: none;
+    background: none;
+    margin-bottom: 70px;
+  }
+
+  .contest-mobile__title {
+    margin-top: -8px;
+    display: flex;
+    align-items: center;
+  }
+
+  .contest-mobile__title::before {
+    content: "";
+    height: 2px;
+    background: #e5e5e5;
+    margin-right: 30px;
+    flex-grow: 1;
+  }
+
+  .contest-mobile__title::after {
+    content: "";
+    height: 2px;
+    background: #e5e5e5;
+    margin-left: 30px;
+    flex-grow: 1;
   }
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $desktop-width) {
   .contest-mobile {
-    max-width: 45%;
+    width: 46%;
+  }
+
+  .contest-mobile__title {
+    display: flex;
+  }
+
+  .contest-mobile__title::before {
+    margin-right: 5px;
+  }
+
+  .contest-mobile__title::after {
+    margin-left: 5px;
   }
 }

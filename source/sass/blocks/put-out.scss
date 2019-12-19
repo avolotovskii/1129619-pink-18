@@ -13,6 +13,7 @@
   margin: 0 17px;
   position: relative;
   align-items: center;
+  justify-content: center;
 }
 
 .put-out__button-sent {
@@ -28,22 +29,18 @@
 
 .put-out__button--active,
 .put-out__button {
-  margin: 0 auto;
-  display: block;
   border: 0;
-  background-color: transparent;
+  margin-right: 20px;
 }
 
 .put-out__item {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
+  margin: 0 30px;
 }
 
 .put-out__button {
-  margin-bottom: 20px;
-  display: flex;
-  flex-direction: column;
+  padding: 0;
+  bottom: 0;
+  background: none;
   fill: #b5b8bd;
 }
 
@@ -86,13 +83,13 @@
   }
 
   .put-out__list {
-    flex-direction: column;
-    margin: 0;
+    padding: 0;
+    display: block;
+    margin: 0 0 40px;
   }
 
   .put-out__item {
-    margin-right: 20px;
-    flex-direction: row;
+    margin: 0;
     border-bottom: 1px solid #dfdfdf;
   }
 
@@ -105,14 +102,6 @@
     fill: #d22856;
     width: 23px;
     height: 23px;
-  }
-
-  .put-out__button--active,
-  .put-out__button {
-    margin: 0;
-    display: block;
-    border: 0;
-    background-color: transparent;
   }
 }
 

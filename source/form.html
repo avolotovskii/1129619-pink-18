@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -102,7 +103,6 @@
             </p>
           </section>
           <section class="checkbox">
-            <div class="checkbox__wrapper">
               <h3 class="checkbox__name contest__title">
                 Ваши безбашенные
                 достижения в путешествии
@@ -133,25 +133,25 @@
                   <label class="checkbox-list__achievement" for="check-hotel">Разгромил отель</label>
                 </li>
               </ul>
-            </div>
           </section>
           <section class="contest-contact">
             <h3 class="contest-contact__title">Контактная информация</h3>
-            <p class="contest-contact__data">
-              <label class="contest-contact__number contest__title">
-                Номер телефона:
-                <input class="contest-contact__input full-name__input" type="tel" placeholder="Номер, пожалуйста">
-              </label>
-            </p>
-            <p class="contest-contact__data">
-              <label class="contest-contact__email contest__title">
-                Адрес почты:
-                <input class="contest-contact__input full-name__input" type="email" placeholder="Введите почту*">
-              </label>
-            </p>
+            <div class="contest-contact__block">
+              <p class="contest-contact__data">
+                <label class="contest-contact__number contest__title">
+                  Номер телефона:
+                  <input class="contest-contact__input full-name__input" type="tel" placeholder="Номер, пожалуйста">
+                </label>
+              </p>
+              <p class="contest-contact__data">
+                <label class="contest-contact__email contest__title">
+                  Адрес почты:
+                  <input class="contest-contact__input full-name__input" type="email" placeholder="Введите почту*">
+                </label>
+              </p>
+            </div>
           </section>
-          <section  class="contest-mobile">
-            <div class="contest-mobile__wrapper">
+          <section class="contest-mobile">
               <h3 class="contest-mobile__title contest__title">
                 С каким приложением
                 путешествовали?
@@ -170,7 +170,6 @@
                   <label class="radio-list__achievement" for="mobile-windows">Windows Phone</label>
                 </li>
               </ul>
-            </div>
           </section>
           <section class="contest-feedback">
             <h3 class="contest-feedback__title contest__title">

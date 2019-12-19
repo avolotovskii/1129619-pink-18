@@ -1,6 +1,6 @@
 .checkbox {
-  margin: 0 -20px;
   background-color: #f2f2f2;
+  margin: 0 -20px;
 }
 
 .checkbox__wrapper {
@@ -10,12 +10,36 @@
 @media (min-width: $tablet-width) {
   .checkbox {
     background-color: #ffffff;
-    border: 1px solid #e5e5e5;
-    padding: 0 20px;
-    margin-bottom: 20px;
+    border: 2px solid #e5e5e5;
+    border-top: none;
+    margin: 0 0 70px 0;
   }
 
   .checkbox__name {
-    margin-top: -10px;
+    margin-top: -8px;
+    display: flex;
+    align-items: center;
+  }
+
+  .checkbox__name::before {
+    content: "";
+    height: 2px;
+    background: #e5e5e5;
+    margin-right: 30px;
+    flex-grow: 1;
+  }
+
+  .checkbox__name::after {
+    content: "";
+    height: 2px;
+    background: #e5e5e5;
+    margin-left: 30px;
+    flex-grow: 1;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .checkbox {
+    width: 100%;
   }
 }

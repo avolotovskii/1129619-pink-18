@@ -4,9 +4,7 @@
 }
 
 .photo-commentator--pan {
-  @include wrapper;
-  background-color: #f2f2f2;
-  margin: -10px 20px 0 20px;
+  margin: 0 20px 0 20px;
   padding: 0;
 }
 
@@ -18,10 +16,8 @@
 .photo-commentator__date {
   font-size: 12px;
   line-height: 24px;
-}
-
-.photo-commentator__name--pan {
-  padding: 0;
+  color: #283645;
+  font-weight: 300;
 }
 
 @media (min-width: $tablet-width) {
@@ -29,11 +25,6 @@
     padding: 0 20px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-  }
-
-  .photo-commentator__appeal {
-    order: -2;
   }
 
   .photo-commentator {

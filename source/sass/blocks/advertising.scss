@@ -137,6 +137,11 @@
     background-size: cover;
   }
 
+  .advertising__wrapper {
+    position: relative;
+    min-height: 745px;
+  }
+
   .adversting__background::before {
     content: "";
     position: absolute;
