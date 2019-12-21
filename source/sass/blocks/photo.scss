@@ -1,9 +1,35 @@
+.photo {
+  overflow: hidden;
+}
+
+.photo__wrapper {
+  @include wrapper;
+}
+
+.photo__title {
+  text-align: center;
+}
+
 .photo__list {
   list-style: none;
+  padding: 0;
+  margin: 0 0 20px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &--pan {
+    margin: 0 -20px 20px;
+  }
 }
 
 .photo__text {
   line-height: 24px;
+}
+
+.photo__text-user {
+  text-align: center;
 }
 
 .photo__like {
@@ -12,4 +38,131 @@
   color: #d22856;
   font-size: 12px;
   line-height: 24px;
+}
+
+.photo__like--pan {
+  border: 0;
+  background-color: #f2f2f2;
+  color: #d22856;
+  font-size: 12px;
+  line-height: 24px;
+}
+
+.photo__panorama-mobile {
+  width: 100%;
+}
+
+.photo__panorama-tablet,
+.photo__panorama-desktop {
+  display: none;
+}
+
+.photo__img-tablet,
+.photo__img-desktop {
+  display: none;
+}
+
+.photo__like--tablet {
+  display: none;
+}
+
+.photo__item {
+  margin-bottom: 20px;
+}
+
+.photo__item--pan {
+  margin: 0 -20px 20px;
+}
+
+.photo__img-mobile {
+  width: 100%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+@media (min-width: $tablet-width) {
+  .photo__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .photo__item {
+    width: 300px;
+    margin-right: 0;
+
+    &:nth-child(2n) {
+      margin-right: 20px;
+    }
+  }
+
+  .photo__item--pan {
+    margin: 0 -20px 50px -20px;
+    width: auto;
+  }
+
+  .photo__img-mobile,
+  .photo__img-desktop {
+    display: none;
+  }
+
+  .photo__img-tablet {
+    width: 100%;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .photo__img-tablet--pan {
+    display: block;
+    width: 100%;
+  }
+
+  .photo__text {
+    margin: 0;
+    order: 1;
+  }
+
+  .photo__like--pan {
+    display: block;
+    border: 0;
+    background-color: #f2f2f2;
+    color: #d22856;
+    font-size: 12px;
+    line-height: 24px;
+    margin-left: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photo__img-desktop--pan {
+    display: block;
+    width: 100vw;
+    max-width: none;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .photo__img-tablet,
+  .photo__img-mobile {
+    display: none;
+  }
+
+  .photo__img-desktop {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .photo__item {
+    margin-right: 20px;
+  }
+
+  .photo__item:nth-child(3n+1) {
+    margin-right: 0;
+  }
+
+  .photo__item--pan {
+    margin: 0 0 50px;
+    width: 100%;
+  }
 }

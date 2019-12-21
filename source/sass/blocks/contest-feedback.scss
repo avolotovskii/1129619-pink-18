@@ -11,10 +11,67 @@
   font-size: 18px;
   line-height: 30px;
   text-transform: uppercase;
+  width: 100%;
+  padding: 8px 0;
+  margin: 0 auto;
 }
 
 .contest-feedback__legend {
   font-size: 14px;
   line-height: 30px;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .contest-feedback {
+    border: 2px solid #e5e5e5;
+    border-top: none;
+  }
+
+  .contest-feedback__button {
+    width: auto;
+    margin: 0;
+  }
+
+  .contest-feedback__title {
+    margin-top: -10px;
+    display: flex;
+    align-items: center;
+  }
+
+  .contest-feedback__title::before {
+    content: "";
+    height: 2px;
+    margin-right: 30px;
+    background: #e5e5e5;
+    flex-grow: 1;
+  }
+
+  .contest-feedback__title::after {
+    content: "";
+    height: 2px;
+    margin-left: 30px;
+    background: #e5e5e5;
+    flex-grow: 1;
+  }
+
+  .contest-feedback__tablet-form {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .contest-feedback__status-hidden {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contest-feedback__status-hidden {
+    display: inline-block;
+  }
+
+  .contest-feedback {
+    width: 100%;
+  }
 }

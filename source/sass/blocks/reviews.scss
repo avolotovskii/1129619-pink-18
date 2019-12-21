@@ -1,5 +1,17 @@
+.reviews {
+  @include wrapper;
+}
+
+.reviews__wrapper {
+  padding-top: 145px;
+}
+
 .reviews__list {
   list-style: none;
+  padding: 0;
+  overflow: hidden;
+  height: 280px;
+  margin: 0 auto;
 }
 
 .reviews__name {
@@ -8,8 +20,41 @@
   text-align: center;
 }
 
+.reviews__toggles {
+  padding: 0;
+  margin: 0 auto;
+}
+
 .reviews__text {
   font-size: 14px;
   line-height: 30px;
   text-align: center;
+}
+
+.reviews__item {
+  display: none;
+}
+
+.reviews__item--active {
+  display: block;
+}
+
+.reviews__name-about {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .reviews__item--active {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .reviews__text {
+    order: -1;
+  }
+
+  .reviews__name-about {
+    text-align: center;
+    display: block;
+  }
 }

@@ -2,3 +2,15 @@
   list-style: none;
   font-size: 18px;
 }
+
+@media (min-width: $desktop-width) {
+  .checkbox-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 124px;
+  }
+
+  .checkbox-list__item {
+    width: 257px;
+  }
+}

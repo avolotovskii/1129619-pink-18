@@ -2,3 +2,40 @@
   background-color: #283645;
   font-weight: 700;
 }
+
+.page-header__wrapper {
+  @include wrapper;
+  padding: 20px 20px;
+}
+
+.page-header__logo-tablet,
+.page-header__logo-desktop {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header__logo-mobile,
+  .page-header__logo-desktop {
+    display: none;
+  }
+
+  .page-header__logo-tablet {
+    display: block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__wrapper {
+    width: 100%;
+    display: flex;
+  }
+
+  .page-header__logo-mobile,
+  .page-header__logo-tablet {
+    display: none;
+  }
+
+  .page-header__logo-desktop {
+    display: block;
+  }
+}

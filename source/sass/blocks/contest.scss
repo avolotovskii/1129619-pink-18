@@ -1,6 +1,49 @@
+.contest {
+  @include wrapper;
+}
+
 .contest__title {
   color: #d22856;
   line-height: 18px;
   text-transform: uppercase;
   font-weight: 300;
+}
+
+.contest__text {
+  text-align: center;
+  margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .contest {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contest__title {
+    align-items: center;
+  }
+
+  .contest__form {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contest {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contest__form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .contest__title {
+    display: flex;
+  }
 }

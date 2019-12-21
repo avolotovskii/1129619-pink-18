@@ -1,0 +1,9 @@
+@mixin wrapper {
+  padding: 0 20px;
+  margin: 0 auto;
+
+  @media (min-width: $desktop-width) {
+    padding: 0 10px;
+    max-width: 960px;
+  }
+}

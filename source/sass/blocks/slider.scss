@@ -1,3 +1,35 @@
 .slider__toggles {
   list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.slider__toggle--active {
+  background: none;
+  border: 3px solid #333333;
+  font-size: 0;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  margin: 0 5px;
+  padding: 2px;
+  background-clip: content-box;
+  cursor: pointer;
+}
+
+.slider__toggle {
+  background: #bec2c7;
+  font-size: 0;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  padding: 2px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+@media (min-width: $desktop-width) {
+  .slider__toggles {
+    display: none;
+  }
 }
