@@ -2,8 +2,27 @@
   background-color: #f2f2f2;
   text-align: center;
   display: block;
-  padding: 50px 0 50px 0;
+  padding: 65px 0 50px 0;
   overflow: hidden;
+  position: relative;
+}
+
+.tariffs__mask {
+  background: #f2f2f2;
+}
+
+.tariffs__mask::before {
+  background: #f2f2f2;
+  top: -30px;
+  content: "";
+  display: block;
+  height: 50%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  transform: skewY(-4.5deg);
+  transform-origin: 100%;
+  z-index: -1;
 }
 
 .tariffs__title {
@@ -37,6 +56,7 @@
 .tariffs__toggles {
   padding-left: 0;
   justify-content: center;
+  margin-bottom: -7px;
 }
 
 @media (min-width: $tablet-width) {
@@ -62,9 +82,17 @@
   .tariffs__toggles {
     display: none;
   }
+
+  .tariffs {
+    padding: 39px 0 17px 0;
+  }
 }
 
 @media (min-width: $desktop-width) {
+  .tariffs {
+    padding: 68px 0 47px 0;
+  }
+
   .tariffs__title {
     font-size: 18px;
   }

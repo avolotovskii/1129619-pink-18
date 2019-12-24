@@ -1,14 +1,16 @@
 .contacts {
   text-align: center;
+  padding: 37px 0 0 0;
 }
 
 .contacts__text {
   font-size: 24px;
   line-height: 36px;
-  margin: 0;
+  margin: -2px 0 0 0;
 }
 
 .contacts__list {
+  margin: 22px 20px 29px 20px;
   list-style: none;
   padding-left: 0;
 }
@@ -24,10 +26,13 @@
   line-height: 36px;
   color: #d22856;
   text-decoration: none;
+  margin: -9px 0 0 0;
+  display: inline-block;
 }
 
 .contacts__item {
   display: block;
+  margin: 12px 0 0 0;
 }
 
 .contacts__link-tablet,
@@ -36,19 +41,27 @@
 }
 
 @media (min-width: $tablet-width) {
+  .contacts {
+    padding: 48px 0 0 0;
+    position: relative;
+  }
+
   .contacts__text {
     font-size: 40px;
-    line-height: 1;
+    line-height: 45px;
   }
 
   .contacts__list {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    margin: 47px 20px -13px 20px;
   }
 
   .contacts__item {
     width: 50%;
+    margin: 0;
+    padding-bottom: 33px;
   }
 
   .contacts__link-mobile,
@@ -58,13 +71,50 @@
 
   .contacts__link-tablet {
     display: block;
+    height: 374px;
+    overflow: hidden;
+  }
+
+  .contacts__method {
+    margin: -5px 0 0 0;
+  }
+
+  .contacts__link-tablet::after {
+    background: #ffffff;
+    bottom: 309px;
+    content: "";
+    display: block;
+    height: 9%;
+    width: 50%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    transform: skewY(11.5deg);
+    transform-origin: 100%;
+  }
+
+  .contacts__link-tablet::before {
+    background: #ffffff;
+    bottom: 376px;
+    content: "";
+    display: block;
+    height: 9%;
+    width: 50%;
+    position: absolute;
+    right: 0;
+    transform: skewY(-11.5deg);
+    transform-origin: 100%;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .contacts {
+    padding: 66px 0 0 0;
+  }
+
   .contacts__text {
     font-size: 50px;
-    line-height: 1;
+    line-height: 63px;
   }
 
   .contacts__item:nth-child(2) {
@@ -82,5 +132,50 @@
 
   .contacts__item {
     width: 300px;
+    margin-right: 9px;
+  }
+
+  .contacts__way {
+    margin-bottom: 21px;
+    display: block;
+  }
+
+  .contacts__email {
+    margin-left: 48px;
+  }
+
+  .contacts__list {
+    margin: 47px 20px -23px 20px;
+  }
+
+  .contacts__map-desktop {
+    height: 500px;
+  }
+
+  .contacts__link-desktop::after {
+    background: #ffffff;
+    bottom: 412px;
+    content: "";
+    display: block;
+    height: 9%;
+    width: 50%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    transform: skewY(9.5deg);
+    transform-origin: 100%;
+  }
+
+  .contacts__link-desktop::before {
+    background: #ffffff;
+    bottom: 512px;
+    content: "";
+    display: block;
+    height: 9%;
+    width: 50%;
+    position: absolute;
+    right: 0;
+    transform: skewY(-9.5deg);
+    transform-origin: 100%;
   }
 }

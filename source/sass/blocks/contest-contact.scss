@@ -1,20 +1,78 @@
+.contest-contact {
+  margin-bottom: 50px;
+}
+
+.contest-contact__title {
+  display: none;
+}
+
+.contest-contact__data {
+  margin: 0 0 22px 0;
+}
+
+.contest-contact__number,
+.contest-contact__email {
+  margin-left: 24px;
+}
 
 @media (min-width: $tablet-width) {
   .contest-contact {
     border: 2px solid #e5e5e5;
     border-top: none;
     order: -3;
-    margin-bottom: 70px;
+    margin-bottom: 65px;
+    height: 310px;
+  }
+
+  .contest-contact__data {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .contest-contact__number,
+  .contest-contact__email {
+    margin-left: 0;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+
+  .contest-contact__number::after {
+    bottom: -7px;
+    content: "";
+    background-image: url("/img/icon-phone.svg");
+    position: absolute;
+    background-repeat: no-repeat;
+    right: -24px;
+    width: 62px;
+    height: 65px;
+  }
+
+  .contest-contact__email::after {
+    bottom: -7px;
+    content: "";
+    background-image: url("/img/icon-mail.svg");
+    position: absolute;
+    background-repeat: no-repeat;
+    right: -24px;
+    width: 62px;
+    height: 65px;
   }
 
   .contest-contact__title {
+    display: flex;
     color: #d22856;
     line-height: 18px;
     text-transform: uppercase;
     font-weight: 300;
     margin-top: -8px;
-    display: flex;
     align-items: center;
+    font-size: 14px;
+  }
+
+  .contest-contact__block {
+    margin-top: 38px;
+    margin-bottom: 29px;
   }
 
   .contest-contact__title::before {
@@ -32,18 +90,12 @@
     margin-left: 30px;
     flex-grow: 1;
   }
-
-  .contest-contact__number,
-  .contest-contact__email {
-    flex-direction: column-reverse;
-    align-items: flex-start;
-    padding: 0 60px;
-  }
 }
 
 @media (min-width: $desktop-width) {
   .contest-contact {
     width: 100%;
+    height: min-content;
   }
 
   .contest-contact__title {
@@ -53,5 +105,10 @@
   .contest-contact__block {
     display: flex;
     justify-content: space-around;
+    margin-top: 38px;
+  }
+
+  .contest-contact__data {
+    margin-left: 59px;
   }
 }

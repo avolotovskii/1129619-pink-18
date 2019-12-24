@@ -78,9 +78,10 @@
         </section>
       </section>
       <section class="contest">
-        <p class="contest__text">
-          Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
-        </p>
+          <p class="contest__text">
+            Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+            <span class="contest__text-add">Пожалуйста, заполните форму нижу:</span>
+          </p>
         <form class="contest__form" action="html://echo.htmlacademy.ru" method="post">
           <section class="full-name">
             <p class="full-name__data">
@@ -103,6 +104,7 @@
             </p>
           </section>
           <section class="checkbox">
+            <div class="checkbox__wrapper">
               <h3 class="checkbox__name contest__title">
                 Ваши безбашенные
                 достижения в путешествии
@@ -118,7 +120,7 @@
                 </li>
                 <li class="checkbox-list__item">
                   <input class="visually-hidden checkbox-list__check" id="check-noris" type="checkbox">
-                  <label class="checkbox-list__achievement" for="check-noris">Видел Чака Нориса</label>
+                  <label class="checkbox-list__achievement" for="check-noris">Видел Чака Норриса</label>
                 </li>
                 <li class="checkbox-list__item">
                   <input class="visually-hidden checkbox-list__check" id="check-souvenir" type="checkbox">
@@ -133,6 +135,7 @@
                   <label class="checkbox-list__achievement" for="check-hotel">Разгромил отель</label>
                 </li>
               </ul>
+            </div>
           </section>
           <section class="contest-contact">
             <h3 class="contest-contact__title">Контактная информация</h3>
@@ -152,6 +155,7 @@
             </div>
           </section>
           <section class="contest-mobile">
+            <div class="contest-mobile__wrapper">
               <h3 class="contest-mobile__title contest__title">
                 С каким приложением
                 путешествовали?
@@ -163,13 +167,14 @@
                 </li>
                 <li class="radio-list__item radio-list__check">
                   <input class="visually-hidden radio-list__check" id="mobile-android" name="os" type="radio">
-                  <label class="radio-list__achievement" for="mobile-android">Pink для Android</label>
+                  <label class="radio-list__achievement" for="mobile-android">Pink на Android</label>
                 </li>
                 <li class="radio-list__item radio-list__check">
                   <input class="visually-hidden radio-list__check" id="mobile-windows" name="os" type="radio">
                   <label class="radio-list__achievement" for="mobile-windows">Windows Phone</label>
                 </li>
               </ul>
+            </div>
           </section>
           <section class="contest-feedback">
             <h3 class="contest-feedback__title contest__title">
@@ -186,8 +191,11 @@
         </form>
       </section>
     </main>
-    <footer class="page-footer">
-      <a class="page-footer__logo" href="index.html"><img class="page-footer__logo-image" src="/img/logo-pink-blue-mobile.svg" alt="Сайт Pink"></a>
+    <footer class="page-footer page-footer--index-mobile">
+      <a class="page-footer__logo" href="index.html">
+        <img class="page-footer__logo-image-mob" src="/img/logo-pink-blue-mobile.svg" alt="Сайт Pink">
+        <img class="page-footer__logo-image-desk" src="/img/logo-pink-blue-desktop.svg" alt="Сайт Pink">
+      </a>
       <ul class="page-footer__social">
         <li class="page-footer__item">
           <a class="page-footer__link">
@@ -218,12 +226,12 @@
       <p class="page-footer__develop">
         Разработано
         <a class="page-footer__link-academy" href="https://htmlacademy.ru/intensive/adaptive">
-          <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
+          <svg fill="#d22856" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
             <path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.472,8.017l13.43-7.99l0.042-0.026V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 l-0.001-0.104L13.407,5.28l-0.088-0.056v0.109L1.925,12.118V3.147l11.547-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.013,1.415l5.904,3.513l-0.86,0.507l-5.031-2.992l-0.013,1.415l3.827,2.275l-0.782,0.523l-3.032-1.787 l-0.013,1.413l1.852,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.015,1.044l-7.941-4.728L5.395,19.65 l7.979,4.796l0.017,1.076l-7.972-4.741l-0.013,1.415l8.021,4.821l0.045,0.026l8.143-4.872v-1.268l-0.011-0.148v-3.761l3.415-2.036 v10.02L13.472,31.85L1.925,24.979V15.127z"/>
           </svg>
         </a>
       </p>
-  </footer>
+    </footer>
     <section class="popup-request popup">
       <h2 class="popup-request__title">Ваша заявка отправлена</h2>
       <p class="popup-request__text">

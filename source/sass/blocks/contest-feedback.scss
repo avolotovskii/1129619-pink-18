@@ -1,7 +1,19 @@
+.contest-feedback {
+  margin: 35px 0 46px 0;
+}
+
+.contest-feedback__title {
+  margin-bottom: 16px;
+}
+
 .contest-feedback__comment {
   width: 100%;
   height: 190px;
   resize: none;
+  font-size: 18px;
+  line-height: 30px;
+  padding: 19px 0 0 18px;
+  border: 2px solid #f2f2f2;
 }
 
 .contest-feedback__button {
@@ -12,8 +24,9 @@
   line-height: 30px;
   text-transform: uppercase;
   width: 100%;
-  padding: 8px 0;
+  padding: 15px 0;
   margin: 0 auto;
+  margin-bottom: 33px;
 }
 
 .contest-feedback__legend {
@@ -22,14 +35,28 @@
   text-transform: uppercase;
 }
 
+.contest-feedback__status {
+  color: #d22856;
+}
+
+.contest-feedback__status-hidden {
+  display: none;
+}
+
+.contest-feedback__tablet-form {
+  text-align: center;
+}
+
 @media (min-width: $tablet-width) {
   .contest-feedback {
+    margin: 35px 0 65px 0;
     border: 2px solid #e5e5e5;
     border-top: none;
+    padding-bottom: 13px;
   }
 
   .contest-feedback__button {
-    width: auto;
+    width: 50%;
     margin: 0;
   }
 
@@ -59,10 +86,14 @@
     display: flex;
     width: 100%;
     justify-content: space-between;
+    align-items: center;
   }
 
-  .contest-feedback__status-hidden {
-    display: none;
+  .contest-feedback__comment {
+    width: 80%;
+    padding: 15px 0 0 18px;
+    margin: 40px auto;
+    display: block;
   }
 }
 
@@ -73,5 +104,16 @@
 
   .contest-feedback {
     width: 100%;
+  }
+
+  .contest-feedback__comment {
+    width: 87%;
+    padding: 10px 0 0 18px;
+    height: 122px;
+    margin: 37px auto;
+  }
+
+  .contest-feedback__button {
+    width: 32%;
   }
 }

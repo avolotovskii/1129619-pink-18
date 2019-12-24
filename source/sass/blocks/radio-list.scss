@@ -2,4 +2,20 @@
   font-size: 18px;
   line-height: 30px;
   list-style: none;
+  margin: 38px 0 0 29px;
+}
+
+.radio-list__item {
+  margin-bottom: 47px;
+}
+
+
+@media (min-width: $tablet-width) {
+  .radio-list {
+    margin: 50px 0 59px 90px;
+  }
+
+  .radio-list__item {
+    margin-bottom: 46px;
+  }
 }

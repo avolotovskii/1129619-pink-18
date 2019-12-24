@@ -1,6 +1,7 @@
 .promo {
   margin: 0 auto;
   overflow: hidden;
+  position: relative;
 }
 
 .promo_item {
@@ -10,7 +11,7 @@
 .promo__text {
   font-size: 24px;
   line-height: 36px;
-  margin: 0 0 37px 0;
+  margin: -2px 0 15px 0;
   text-align: center;
   color: #283645;
 }
@@ -22,12 +23,29 @@
 .promo__head {
   @include wrapper;
   background-color: #ffffff;
+  margin: 0 0 58px 0;
 }
 
 .promo__advantages {
   @include wrapper;
   background-color: #f2f2f2;
   display: block;
+  padding-top: 27px;
+  position: relative;
+}
+
+.promo__advantages-mask::after {
+  background: #f2f2f2;
+  top: -30px;
+  content: "";
+  display: block;
+  height: 50%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  transform: skewY(-4.5deg);
+  transform-origin: 100%;
+  z-index: -1;
 }
 
 .promo__list {
@@ -45,8 +63,20 @@
 }
 
 @media (min-width: $tablet-width) {
+  .promo {
+    padding-top: 52px;
+  }
+
+  .promo__head {
+    padding-left: 32px;
+    padding-right: 32px;
+    margin: 0 0 98px 0;
+  }
+
   .promo__text {
     margin: 0;
+    font-size: 39px;
+    line-height: 47px;
   }
 
   .promo__advantage {
@@ -56,6 +86,17 @@
     padding: 0;
     width: 300px;
   }
+
+  .promo__advantages-mask {
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: -135px;
+  }
+
+  .promo__advantages-mask::after {
+    top: -49px;
+  }
+
 
   .promo__advantages {
     display: flex;
@@ -81,10 +122,16 @@
 @media (min-width: $desktop-width) {
   .promo__text {
     margin: 0;
+    font-size: 50px;
+    line-height: 57px;
   }
 
   .promo__advantage {
     width: 100%;
+  }
+
+  .promo__advantages {
+    padding-bottom: 175px;
   }
 
   .promo__list-mobile,
@@ -95,5 +142,14 @@
   .promo__list-desktop {
     display: flex;
     order: -1;
+  }
+
+  .promo {
+    padding-top: 67px;
+  }
+
+  .promo__head {
+    @include wrapper;
+    margin-bottom: 165px;
   }
 }
