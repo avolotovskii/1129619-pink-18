@@ -1,5 +1,5 @@
 .page__wrapper {
-  @include wrapper;
+  // @include wrapper;
 }
 
 .page {
@@ -37,11 +37,11 @@
 @media (min-width: $desktop-width) {
   .page {
     background-image: url("/img/bg-back-desktop@1x.jpg");
-    min-height: 282px;
+    min-height: 317px;
   }
 
   .page__title {
-    padding: 16px 0 0 0;
+    padding: 50px 0 0 0;
     width: 780px;
     margin: 0 auto;
   }

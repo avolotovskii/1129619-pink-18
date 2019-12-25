@@ -51,6 +51,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .reviews {
+    margin-top: 36px;
+  }
+
   .reviews__item--active {
     display: flex;
     flex-direction: column;
@@ -59,6 +63,8 @@
   .reviews__text {
     order: -1;
     font-size: 18px;
+    margin: 0;
+    margin-bottom: 19px;
   }
 
   .reviews__name {
@@ -74,8 +80,8 @@
 
 @media (min-width: $desktop-width) {
   .reviews {
-    margin-top: 54px;
-    margin-bottom: 157px;
+    margin-bottom: 139px;
+    margin-top: 70px;
   }
 
   .reviews__item {
@@ -114,13 +120,13 @@
   .review__arrow-left {
     display: block;
     position: absolute;
-    top: 56%;
+    top: 50%;
   }
 
   .review__arrow-right {
     display: block;
     position: absolute;
     right: 0;
-    top: 57%;
+    top: 50%;
   }
 }

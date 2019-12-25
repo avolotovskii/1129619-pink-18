@@ -34,9 +34,10 @@
 .table__cell {
   width: 33.333333%;
   border: 3px solid #eeeeee;
-  padding: 11px 0 16px 23px;
+  padding: 12px 0 14px 23px;
   background-color: #ffffff;
   text-align: start;
+  position: relative;
 }
 
 .table__wrap {
@@ -51,8 +52,9 @@
   stroke-width: 1px;
   width: 30px;
   height: 20px;
-  margin-left: 48px;
-  margin-top: 3px;
+  right: 13px;
+  top: 18px;
+  position: absolute;
 }
 
 .table__no {
@@ -60,7 +62,9 @@
   stroke-width: 1px;
   width: 27px;
   height: 27px;
-  margin: 0 0 -8px 48px;
+  right: 13px;
+  top: 13px;
+  position: absolute;
 }
 
 .table__hit {
@@ -97,10 +101,10 @@
     display: table-cell;
   }
 
-  .table-wrap {
-    margin: 0;
+  .table__wrap {
     padding: 0;
     overflow: auto;
+    margin-bottom: 49px;
   }
 
   .table__cell {
@@ -123,6 +127,17 @@
 
   .table__hit {
     width: 60px;
+    top: -7px;
+  }
+
+  .table__yes {
+    right: 60px;
+    top: 12px;
+  }
+
+  .table__no {
+    right: 63px;
+    top: 8px;
   }
 }
 
@@ -145,15 +160,16 @@
   }
 
   .table__cell {
-    padding: 10px 0 12px 24px;
+    padding: 15px 0 13px 22px;
   }
 
   .table__yes {
-    margin-left: 78px;
-    margin-top: 6px;
+    top: 43%;
+    left: 43%;
   }
 
   .table__no {
-    margin: 0 0 0 77px;
+    top: 26%;
+    left: 44%;
   }
 }

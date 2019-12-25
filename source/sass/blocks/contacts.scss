@@ -1,6 +1,6 @@
 .contacts {
   text-align: center;
-  padding: 37px 0 0 0;
+  padding: 40px 0 0 0;
 }
 
 .contacts__text {
@@ -110,6 +110,7 @@
 @media (min-width: $desktop-width) {
   .contacts {
     padding: 66px 0 0 0;
+    margin-bottom: 30px;
   }
 
   .contacts__text {
