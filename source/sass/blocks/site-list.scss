@@ -3,6 +3,11 @@
   text-align: center;
   padding: 0;
   margin: 0 -20px;
+  margin-top: 0;
+}
+
+.site-list--active {
+  margin-top: 17px;
 }
 
 .site-list__item {
@@ -37,6 +42,19 @@
   }
 
   .site-list__link {
-    margin-left: 42px;
+    margin-left: 35px;
+
+    &--active {
+      padding-bottom: 9px;
+      border-bottom: 2px solid #ffffff;
+    }
+  }
+
+  .site-list__link:hover {
+    color: #d22856;
+  }
+
+  .site-list__link:active {
+    color: rgba(255, 255, 255, 0.3);
   }
 }

@@ -24,6 +24,15 @@
   margin: 17px 6px 0 6px;
 }
 
+.page-footer__item:hover {
+  border-color: #283645;
+}
+
+.page-footer__item:active {
+  fill-opacity: 0.3;
+  border-color: #e9ebec;
+}
+
 .page-footer__develop {
   line-height: 18px;
   width: 140px;
@@ -35,6 +44,15 @@
   justify-content: space-between;
   margin-top: 24px;
 }
+
+.page-footer__develop:hover svg {
+  fill: #283645;
+}
+
+.page-footer__develop:active svg {
+  fill-opacity: 0.3;
+}
+
 
 .page-footer__img {
   fill: red;
@@ -55,6 +73,15 @@
 
 .page-footer__logo-image-desk {
   display: none;
+}
+
+.page-footer__logo-image-mob:hover {
+  fill: #d22856;
+}
+
+.page-footer__logo-image-mob:active {
+  fill-opacity: 0.3;
+  fill: #000000;
 }
 
 @media (min-width: $tablet-width) {
@@ -111,6 +138,15 @@
 
   .page-footer__logo-image-desk {
     display: block;
+
+    &:hover {
+      fill: #d22856;
+    }
+
+    &:active {
+      fill-opacity: 0.3;
+      fill: #000000;
+    }
   }
 
   .page-footer__logo-image-mob {

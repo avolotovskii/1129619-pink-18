@@ -5,17 +5,41 @@
   margin: 38px 0 0 29px;
 }
 
+.radio-list__achievement::before {
+  content: "";
+  border: 2px solid #e5e5e5;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  left: -70px;
+  top: -4px;
+  border-radius: 50%;
+}
+
+
 .radio-list__item {
   margin-bottom: 47px;
+  position: relative;
 }
 
 
 @media (min-width: $tablet-width) {
   .radio-list {
-    margin: 50px 0 59px 90px;
+    padding: 46px 0 12px 117px;
+    margin: 0;
   }
 
   .radio-list__item {
     margin-bottom: 46px;
+  }
+
+  .radio-list__achievement::before {
+    left: -60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .radio-list {
+    padding: 50px 0 10px 131px;
   }
 }

@@ -1,5 +1,4 @@
 .news {
-  @include wrapper;
   display: none;
   position: relative;
 }
@@ -21,6 +20,11 @@
   .news {
     min-height: 300px;
     display: block;
+    margin-bottom: 122px;
+  }
+
+  .news__wrapper {
+    position: relative;
   }
 
   .news__section::before {
@@ -37,14 +41,14 @@
     background-size: contain;
     background-repeat: no-repeat;
     left: 20px;
-    top: -41px;
+    top: 53px;
     line-height: 385%;
     fill: #d22856;
   }
 
   .news__section::after {
     left: 39px;
-    bottom: 80px;
+    bottom: 0;
     content: "24";
     font-size: 96px;
     font-weight: 700;
@@ -52,12 +56,12 @@
     border: 13px solid #d22856;
     color: #d22856;
     border-radius: 100%;
-    padding: 69px 34px 77px 32px;
+    padding: 66px 34px 73px 32px;
   }
 
   .news__section {
-    margin-left: 290px;
-    margin-top: 93px;
+    padding-left: 309px;
+    padding-top: 63px;
   }
 
   .news__tittle {
@@ -79,8 +83,8 @@
 
 @media (min-width: $desktop-width) {
   .news__section::after {
-    left: 157px;
-    bottom: 99px;
+    left: 36px;
+    bottom: -19px;
     padding: 91px 41px 97px 41px;
     font-size: 121px;
   }
@@ -88,13 +92,13 @@
   .news__section::before {
     width: 307px;
     height: 345px;
-    left: 130px;
+    left: 10px;
     top: 18px;
   }
 
   .news {
     background-color: #f2f2f2;
-    padding: 1px 0 118px 0;
+    padding: 0 0 62px 0;
     max-width: none;
   }
 
@@ -103,8 +107,8 @@
   }
 
   .news__section {
-    margin-left: 350px;
-    margin-top: 105px;
+    padding-left: 348px;
+    padding-top: 77px;
   }
 
   .news__tittle {
@@ -113,7 +117,7 @@
   }
 
   .news__text {
-    margin: 22px 0 24px 19px;
+    margin: 22px 0 27px 19px;
     line-height: 31px;
     width: 528px;
     font-size: 18px;

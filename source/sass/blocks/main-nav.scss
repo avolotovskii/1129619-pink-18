@@ -3,7 +3,7 @@
   font-size: 18px;
   line-height: 32px;
   text-transform: uppercase;
-  margin: 14px auto;
+  margin: 0 auto;
   margin-bottom: 0;
 }
 
@@ -34,9 +34,9 @@
   &::after {
     content: "";
     position: absolute;
-    width: 36px;
-    height: 4px;
-    right: -7px;
+    width: 30px;
+    height: 5px;
+    right: -5px;
     background-color: #ffffff;
   }
 
@@ -46,6 +46,16 @@
 
   &::after {
     transform: rotate(-45deg);
+  }
+
+  &:hover::after,
+  &:hover::before {
+    background-color: #d22856;
+  }
+
+  &:active::after,
+  &:active::before {
+    background-color: rgba(210, 40, 86, 0.3);
   }
 }
 

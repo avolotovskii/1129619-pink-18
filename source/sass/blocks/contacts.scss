@@ -5,12 +5,13 @@
 
 .contacts__text {
   font-size: 24px;
-  line-height: 36px;
-  margin: -2px 0 0 0;
+  line-height: 30px;
+  margin: 1px 0 0 0;
+  font-weight: 300;
 }
 
 .contacts__list {
-  margin: 22px 20px 29px 20px;
+  margin: 30px 20px 33px 20px;
   list-style: none;
   padding-left: 0;
 }
@@ -18,21 +19,22 @@
 .contacts__way {
   font-size: 18px;
   font-weight: 700;
-  line-height: 36px;
+  line-height: 20px;
 }
 
 .contacts__method {
   font-size: 24px;
-  line-height: 36px;
+  line-height: 30px;
   color: #d22856;
   text-decoration: none;
-  margin: -9px 0 0 0;
+  margin: 0 0 0 0;
   display: inline-block;
+  font-weight: 300;
 }
 
 .contacts__item {
   display: block;
-  margin: 12px 0 0 0;
+  margin: 13px 0 0 0;
 }
 
 .contacts__link-tablet,
@@ -40,9 +42,39 @@
   display: none;
 }
 
+.contacts__link-mobile {
+  position: relative;
+  display: block;
+}
+
+.contacts__link-mobile::after {
+  background: linear-gradient(to top right, transparent 49%, #ffffff 51%);
+  top: 0;
+  bottom: 100%;
+  width: 50%;
+  height: 35px;
+  content: "";
+  display: block;
+  left: 0;
+  position: absolute;
+  right: 0;
+}
+
+.contacts__link-mobile::before {
+  background: linear-gradient(to top left, transparent 49%, #ffffff 51%);
+  top: 0;
+  bottom: 100%;
+  width: 50%;
+  height: 35px;
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+}
+
 @media (min-width: $tablet-width) {
   .contacts {
-    padding: 48px 0 0 0;
+    padding: 45px 0 0 0;
     position: relative;
   }
 
@@ -55,13 +87,17 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 47px 20px -13px 20px;
+    margin: 45px 10px -16px 10px;
   }
 
   .contacts__item {
     width: 50%;
     margin: 0;
-    padding-bottom: 33px;
+    padding-bottom: 45px;
+  }
+
+  .contacts__item:last-child {
+    width: 215px;
   }
 
   .contacts__link-mobile,
@@ -73,6 +109,7 @@
     display: block;
     height: 374px;
     overflow: hidden;
+    position: relative;
   }
 
   .contacts__method {
@@ -80,42 +117,54 @@
   }
 
   .contacts__link-tablet::after {
-    background: #ffffff;
-    bottom: 309px;
+    background: linear-gradient(to top right, transparent 49%, #ffffff 51%);
+    top: 0;
+    bottom: 100%;
+    width: 50%;
+    height: 71px;
     content: "";
     display: block;
-    height: 9%;
-    width: 50%;
     left: 0;
     position: absolute;
     right: 0;
-    transform: skewY(11.5deg);
-    transform-origin: 100%;
   }
 
   .contacts__link-tablet::before {
-    background: #ffffff;
-    bottom: 376px;
+    background: linear-gradient(to top left, transparent 49%, #ffffff 51%);
+    top: 0;
+    bottom: 100%;
+    width: 50%;
+    height: 71px;
     content: "";
     display: block;
-    height: 9%;
-    width: 50%;
     position: absolute;
     right: 0;
-    transform: skewY(-11.5deg);
-    transform-origin: 100%;
+  }
+
+  .contacts__email:hover {
+    text-decoration: underline;
+    color: #283645;
+  }
+
+  .contacts__email:active {
+    color: rgba($color: #000000, $alpha: 0.3);
+    text-decoration: none;
   }
 }
 
 @media (min-width: $desktop-width) {
   .contacts {
-    padding: 66px 0 0 0;
+    @include wrapper;
+    padding: 61px 0 0 0;
     margin-bottom: 30px;
+    line-height: 30px;
+    margin-top: 61px;
   }
 
   .contacts__text {
     font-size: 50px;
     line-height: 63px;
+    margin: 0;
   }
 
   .contacts__item:nth-child(2) {
@@ -129,15 +178,19 @@
 
   .contacts__link-desktop {
     display: block;
+    position: relative;
   }
 
   .contacts__item {
     width: 300px;
-    margin-right: 9px;
+
+    &:last-child {
+      width: 300px;
+    }
   }
 
   .contacts__way {
-    margin-bottom: 21px;
+    margin-bottom: 30px;
     display: block;
   }
 
@@ -146,37 +199,40 @@
   }
 
   .contacts__list {
-    margin: 47px 20px -23px 20px;
+    margin: 55px 0 -23px 0;
+    justify-content: space-between;
   }
 
   .contacts__map-desktop {
     height: 500px;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   .contacts__link-desktop::after {
-    background: #ffffff;
-    bottom: 412px;
+    background: linear-gradient(to top right, transparent 49%, #ffffff 51%);
+    top: 0;
+    bottom: 100%;
+    width: 50%;
+    height: 100px;
     content: "";
     display: block;
-    height: 9%;
-    width: 50%;
     left: 0;
     position: absolute;
     right: 0;
-    transform: skewY(9.5deg);
-    transform-origin: 100%;
   }
 
   .contacts__link-desktop::before {
-    background: #ffffff;
-    bottom: 512px;
+    background: linear-gradient(to top left, transparent 49%, #ffffff 51%);
+    top: 0;
+    bottom: 100%;
+    width: 50%;
+    height: 100px;
     content: "";
     display: block;
-    height: 9%;
-    width: 50%;
     position: absolute;
     right: 0;
-    transform: skewY(-9.5deg);
-    transform-origin: 100%;
   }
 }

@@ -17,14 +17,14 @@
 
 .table__cell-head {
   font-size: 18px;
-  padding: 18px 0;
+  padding: 16px 0 19px 5px;
   border: 3px solid #eeeeee;
   position: relative;
 }
 
 .table-price {
   font-size: 24px;
-  font-weight: 100;
+  font-weight: 300;
 }
 
 .table__first {
@@ -34,7 +34,7 @@
 .table__cell {
   width: 33.333333%;
   border: 3px solid #eeeeee;
-  padding: 12px 0 14px 23px;
+  padding: 14px 0 14px 23px;
   background-color: #ffffff;
   text-align: start;
   position: relative;
@@ -42,7 +42,7 @@
 
 .table__wrap {
   overflow: hidden;
-  margin-bottom: 43px;
+  margin-bottom: 46px;
   background: #f2f2f2;
   position: relative;
 }
@@ -69,8 +69,8 @@
 
 .table__hit {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: -2px;
+  left: -1px;
   width: 70px;
 }
 
@@ -131,13 +131,13 @@
   }
 
   .table__yes {
-    right: 60px;
-    top: 12px;
+    right: 40%;
+    top: 24%;
   }
 
   .table__no {
-    right: 63px;
-    top: 8px;
+    right: 40%;
+    top: 13%;
   }
 }
 

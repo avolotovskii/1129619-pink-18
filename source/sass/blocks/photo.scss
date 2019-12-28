@@ -150,7 +150,7 @@
   .photo__img-tablet--pan {
     display: block;
     width: 100vw;
-    height: 89%;
+    height: 82%;
     max-width: none;
     position: relative;
     left: 50%;
@@ -159,8 +159,7 @@
 
   .photo__text {
     margin: 0;
-    order: 1;
-    min-height: 48px;
+    // order: 1;
   }
 
   .photo__like {
@@ -183,12 +182,13 @@
     color: #d22856;
     font-size: 12px;
     line-height: 24px;
-    padding: 21px 0 0 0;
+    padding: 0 0 0 0;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
     margin-right: 0;
     margin-left: auto;
+    order: -1;
   }
 
   .photo__title {

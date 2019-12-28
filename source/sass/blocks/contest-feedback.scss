@@ -29,6 +29,14 @@
   margin-bottom: 33px;
 }
 
+.contest-feedback__button:hover {
+  background-color: #1c9b5e;
+}
+
+.contest-feedback__button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .contest-feedback__legend {
   font-size: 14px;
   line-height: 30px;
@@ -64,6 +72,7 @@
     margin-top: -10px;
     display: flex;
     align-items: center;
+    font-weight: 400;
   }
 
   .contest-feedback__title::before {
@@ -104,6 +113,7 @@
 
   .contest-feedback {
     width: 100%;
+    padding-bottom: 8px;
   }
 
   .contest-feedback__comment {

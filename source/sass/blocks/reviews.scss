@@ -1,7 +1,7 @@
 .reviews {
   @include wrapper;
   margin-top: 23px;
-  margin-bottom: 64px;
+  margin-bottom: 69px;
 }
 
 .reviews__list {
@@ -16,6 +16,7 @@
   font-size: 18px;
   line-height: 30px;
   text-align: center;
+  margin: 15px 0 0 0;
 }
 
 .reviews__toggles {
@@ -128,5 +129,16 @@
     position: absolute;
     right: 0;
     top: 50%;
+  }
+
+  .review__arrow-left,
+  .review__arrow-right {
+    &:hover {
+      fill: rgba($color: #000000, $alpha: 0.6);
+    }
+
+    &:active {
+      fill: rgba($color: #000000, $alpha: 0.1);
+    }
   }
 }

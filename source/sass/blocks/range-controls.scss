@@ -18,9 +18,13 @@
   background: #f2f2f2;
   border-radius: 18px;
   cursor: pointer;
-  border: 2px solid #d32d5a;
+  border: 2px solid #d22856;
   position: relative;
   top: -7px;
+
+  &:active {
+    background: #d22856;
+  }
 }
 
 .range-controls__bar--active {
@@ -31,6 +35,10 @@
   display: block;
   margin-left: 17px;
   top: 85px;
+
+  &:active {
+    background: #d22856;
+  }
 }
 
 @media (min-width: $tablet-width) {
