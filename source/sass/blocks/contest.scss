@@ -1,5 +1,7 @@
 .contest {
   @include wrapper;
+  padding-top: 44px;
+  margin-bottom: 57px;
 }
 
 .contest__title {
@@ -7,6 +9,10 @@
   line-height: 18px;
   text-transform: uppercase;
   font-weight: 300;
+  margin: 0 auto;
+  font-size: 14px;
+  text-align: center;
+  width: 225px;
 }
 
 .contest__text {
@@ -14,14 +20,36 @@
   margin: 0;
 }
 
+.contest__text-add {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
+  .contest__text {
+    font-size: 18px;
+    line-height: 30px;
+    width: 500px;
+    margin: 0 auto;
+  }
+
+  .contest__text-add {
+    display: block;
+    font-size: 18px;
+    line-height: 30px;
+    margin: 0 auto;
+  }
+
   .contest {
     display: flex;
     flex-direction: column;
+    padding-top: 91px;
   }
 
   .contest__title {
     align-items: center;
+    display: flex;
+    margin: 0;
+    width: 100%;
   }
 
   .contest__form {
@@ -34,6 +62,7 @@
   .contest {
     display: flex;
     flex-direction: column;
+    margin-bottom: 41px;
   }
 
   .contest__form {
@@ -43,7 +72,11 @@
     justify-content: space-between;
   }
 
-  .contest__title {
-    display: flex;
+  .contest__text {
+    width: 770px;
+  }
+
+  .contest__text-add {
+    display: inline;
   }
 }

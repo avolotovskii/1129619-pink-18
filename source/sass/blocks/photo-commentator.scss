@@ -1,11 +1,12 @@
 .photo-commentator {
-  padding: 0 20px;
+  padding: 18px 20px;
   background-color: #f2f2f2;
 }
 
 .photo-commentator--pan {
-  margin: 0 20px 0 20px;
-  padding: 0;
+  margin: 0 20px;
+  padding: 0 20px;
+  padding-top: 14px;
 }
 
 .photo-commentator__name {
@@ -20,15 +21,33 @@
   font-weight: 300;
 }
 
+.photo__text {
+  margin: 0;
+  max-height: 100px;
+}
+
 @media (min-width: $tablet-width) {
-  .photo-commentator--pan {
-    padding: 0 20px;
+  .photo-commentator {
+    margin: 0;
+    padding: 20px 27px;
     display: flex;
     flex-wrap: wrap;
   }
 
-  .photo-commentator {
-    margin-top: 0;
+  .photo-commentator--pan {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 27px;
+    padding-top: 24px;
+  }
+
+  .photo-commentator__name {
+    order: -3;
+  }
+
+  .photo-commentator__date {
+    text-transform: uppercase;
+    order: -2;
   }
 
   .photo-commentator__name--pan {

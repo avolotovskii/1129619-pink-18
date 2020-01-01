@@ -1,16 +1,41 @@
+.checkbox-list {
+  margin: 42px 0 27px 69px;
+  padding: 0 0 1px 0;
+}
+
 .checkbox-list__item {
   list-style: none;
   font-size: 18px;
+  margin-bottom: 52px;
+  position: relative;
+}
+
+.checkbox-list__achievement::before {
+  content: "";
+  border: 2px solid #e5e5e5;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  left: -60px;
+  top: -4px;
+}
+
+@media (min-width: $tablet-width) {
+  .checkbox-list {
+    margin: 49px 0 0 118px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .checkbox-list {
     display: flex;
     flex-wrap: wrap;
-    padding-left: 124px;
+    flex-direction: column;
+    height: 171px;
   }
 
   .checkbox-list__item {
     width: 257px;
+    margin-right: 51px;
   }
 }

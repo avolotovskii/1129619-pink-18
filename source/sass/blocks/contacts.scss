@@ -1,14 +1,17 @@
 .contacts {
   text-align: center;
+  padding: 40px 0 0 0;
 }
 
 .contacts__text {
   font-size: 24px;
-  line-height: 36px;
-  margin: 0;
+  line-height: 30px;
+  margin: 1px 0 0 0;
+  font-weight: 300;
 }
 
 .contacts__list {
+  margin: 30px 20px 33px 20px;
   list-style: none;
   padding-left: 0;
 }
@@ -16,18 +19,22 @@
 .contacts__way {
   font-size: 18px;
   font-weight: 700;
-  line-height: 36px;
+  line-height: 20px;
 }
 
 .contacts__method {
   font-size: 24px;
-  line-height: 36px;
+  line-height: 30px;
   color: #d22856;
   text-decoration: none;
+  margin: 0 0 0 0;
+  display: inline-block;
+  font-weight: 300;
 }
 
 .contacts__item {
   display: block;
+  margin: 13px 0 0 0;
 }
 
 .contacts__link-tablet,
@@ -35,20 +42,62 @@
   display: none;
 }
 
+.contacts__link-mobile {
+  position: relative;
+  display: block;
+}
+
+.contacts__link-mobile::after {
+  background: linear-gradient(to top right, transparent 49%, #ffffff 51%);
+  top: 0;
+  bottom: 100%;
+  width: 50%;
+  height: 35px;
+  content: "";
+  display: block;
+  left: 0;
+  position: absolute;
+  right: 0;
+}
+
+.contacts__link-mobile::before {
+  background: linear-gradient(to top left, transparent 49%, #ffffff 51%);
+  top: 0;
+  bottom: 100%;
+  width: 50%;
+  height: 35px;
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+}
+
 @media (min-width: $tablet-width) {
+  .contacts {
+    padding: 45px 0 0 0;
+    position: relative;
+  }
+
   .contacts__text {
     font-size: 40px;
-    line-height: 1;
+    line-height: 45px;
   }
 
   .contacts__list {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    margin: 45px 10px -16px 10px;
   }
 
   .contacts__item {
     width: 50%;
+    margin: 0;
+    padding-bottom: 45px;
+  }
+
+  .contacts__item:last-child {
+    width: 215px;
   }
 
   .contacts__link-mobile,
@@ -58,13 +107,64 @@
 
   .contacts__link-tablet {
     display: block;
+    height: 374px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .contacts__method {
+    margin: -5px 0 0 0;
+  }
+
+  .contacts__link-tablet::after {
+    background: linear-gradient(to top right, transparent 49%, #ffffff 51%);
+    top: 0;
+    bottom: 100%;
+    width: 50%;
+    height: 71px;
+    content: "";
+    display: block;
+    left: 0;
+    position: absolute;
+    right: 0;
+  }
+
+  .contacts__link-tablet::before {
+    background: linear-gradient(to top left, transparent 49%, #ffffff 51%);
+    top: 0;
+    bottom: 100%;
+    width: 50%;
+    height: 71px;
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+  }
+
+  .contacts__email:hover {
+    text-decoration: underline;
+    color: #283645;
+  }
+
+  .contacts__email:active {
+    color: rgba($color: #000000, $alpha: 0.3);
+    text-decoration: none;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .contacts {
+    @include wrapper;
+    padding: 61px 0 0 0;
+    margin-bottom: 30px;
+    line-height: 30px;
+    margin-top: 61px;
+  }
+
   .contacts__text {
     font-size: 50px;
-    line-height: 1;
+    line-height: 63px;
+    margin: 0;
   }
 
   .contacts__item:nth-child(2) {
@@ -78,9 +178,61 @@
 
   .contacts__link-desktop {
     display: block;
+    position: relative;
   }
 
   .contacts__item {
     width: 300px;
+
+    &:last-child {
+      width: 300px;
+    }
+  }
+
+  .contacts__way {
+    margin-bottom: 30px;
+    display: block;
+  }
+
+  .contacts__email {
+    margin-left: 48px;
+  }
+
+  .contacts__list {
+    margin: 55px 0 -23px 0;
+    justify-content: space-between;
+  }
+
+  .contacts__map-desktop {
+    height: 500px;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .contacts__link-desktop::after {
+    content: "";
+    background-image: url(/img/bg-triangle-white.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 50vw;
+    height: 150px;
+    top: 0;
+    // left: 50%;
+    // transform: translateX(-50%);
+  }
+
+  .contacts__link-desktop::before {
+    content: "";
+    background-image: url(/img/bg-triangle-white.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 53vw;
+    height: 150px;
+    top: -177px;
+    left: -32px;
+    -webkit-transform: rotate(30deg);
+    transform: rotate(184deg);
   }
 }

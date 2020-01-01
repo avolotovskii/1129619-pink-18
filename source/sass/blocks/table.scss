@@ -1,9 +1,10 @@
 .table {
-  width: 300%;
+  width: 260%;
   transition: margin 0.3s;
   border: 0;
   border-collapse: collapse;
-  margin-left: -100%;
+  margin-left: -81%;
+  text-transform: uppercase;
 }
 
 .table__header {
@@ -16,11 +17,14 @@
 
 .table__cell-head {
   font-size: 18px;
+  padding: 16px 0 19px 5px;
+  border: 3px solid #eeeeee;
+  position: relative;
 }
 
 .table-price {
   font-size: 24px;
-  font-weight: 100;
+  font-weight: 300;
 }
 
 .table__first {
@@ -29,25 +33,64 @@
 
 .table__cell {
   width: 33.333333%;
-  border: 2px solid #eeeeee;
-  padding: 5px;
+  border: 3px solid #eeeeee;
+  padding: 14px 0 14px 23px;
   background-color: #ffffff;
+  text-align: start;
+  position: relative;
 }
 
 .table__wrap {
-  padding: 0 10px;
   overflow: hidden;
+  margin-bottom: 46px;
+  background: #f2f2f2;
+  position: relative;
+}
+
+.table__yes {
+  stroke: #3dc644;
+  stroke-width: 1px;
+  width: 30px;
+  height: 20px;
+  right: 13px;
+  top: 18px;
+  position: absolute;
+}
+
+.table__no {
+  stroke: #f25b26;
+  stroke-width: 1px;
+  width: 27px;
+  height: 27px;
+  right: 13px;
+  top: 13px;
+  position: absolute;
+}
+
+.table__hit {
+  position: absolute;
+  top: -2px;
+  left: -1px;
+  width: 70px;
+}
+
+.table__hit-text {
+  font-size: 14px;
+  transform: rotate(-45deg);
+  fill: #ffffff;
+  font-weight: 300;
 }
 
 @media (min-width: $tablet-width) {
   .table {
     @include wrapper;
-    width: 100%;
+    width: 94%;
   }
 
   .table__cell-head {
     border: 2px solid #f2f2f2;
     font-size: 16px;
+    padding: 8px 0;
   }
 
   .table__none {
@@ -58,15 +101,16 @@
     display: table-cell;
   }
 
-  .table-wrap {
-    margin: 0;
+  .table__wrap {
     padding: 0;
     overflow: auto;
+    margin-bottom: 49px;
   }
 
   .table__cell {
     width: 25%;
-    text-align: center;
+    text-transform: none;
+    padding: 3px 0 11px 14px;
   }
 
   .table__text {
@@ -80,14 +124,52 @@
   .table-price {
     font-size: 18px;
   }
+
+  .table__hit {
+    width: 60px;
+    top: -7px;
+  }
+
+  .table__yes {
+    right: 40%;
+    top: 24%;
+  }
+
+  .table__no {
+    right: 40%;
+    top: 13%;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .table__cell-head {
     font-size: 18px;
+    padding: 17px 0;
   }
 
   .table-price {
     font-size: 24px;
+  }
+
+  .table {
+    max-width: 945px;
+  }
+
+  .table__first {
+    font-size: 18px;
+  }
+
+  .table__cell {
+    padding: 15px 0 13px 22px;
+  }
+
+  .table__yes {
+    top: 43%;
+    left: 43%;
+  }
+
+  .table__no {
+    top: 26%;
+    left: 44%;
   }
 }
