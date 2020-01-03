@@ -24,7 +24,7 @@
   color: #ffffff;
   text-align: center;
   padding: 0 13px 26px 13px;
-  margin: -4px 0 0 0;
+  margin: -10px 0 0 0;
   order: -2;
   font-weight: 300;
 }
@@ -94,12 +94,19 @@
     width: 100%;
     text-align: left;
     margin: 0 auto;
-    // position: relative;
-    min-height: 729px;
+    position: relative;
+    min-height: 739px;
+    padding-top: 10px;
+    overflow: hidden;
+    z-index: 10;
+  }
+
+  .advertising__item {
+    margin: 0 19px;
   }
 
   .advertising__button {
-    margin-bottom: 31px;
+    margin-bottom: 43px;
     width: 100%;
     text-align: center;
     margin-top: 30px;
@@ -113,6 +120,7 @@
 
   .adversting__tablet-block {
     width: 300px;
+    display: block;
     // padding-top: 70px;
   }
 
@@ -129,9 +137,10 @@
     height: 545px;
     background-repeat: no-repeat;
     order: 1;
-    right: 0;
-    bottom: -12px;
+    right: -8px;
+    bottom: 0;
     background-position: 50%;
+    z-index: -1;
   }
 
   .advertising__tablet-img {
@@ -154,7 +163,8 @@
   }
 
   .advertising__list {
-    margin-left: 47px;
+    margin: 0 0 29px;
+    justify-content: center;
   }
 }
 

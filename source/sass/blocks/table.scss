@@ -1,5 +1,5 @@
 .table {
-  width: 260%;
+  width: 300%;
   transition: margin 0.3s;
   border: 0;
   border-collapse: collapse;
@@ -45,24 +45,25 @@
   margin-bottom: 46px;
   background: #f2f2f2;
   position: relative;
+  padding: 0 20px;
 }
 
 .table__yes {
   stroke: #3dc644;
   stroke-width: 1px;
-  width: 30px;
-  height: 20px;
+  width: 37px;
+  height: 23px;
   right: 13px;
-  top: 18px;
+  top: 16px;
   position: absolute;
 }
 
 .table__no {
   stroke: #f25b26;
   stroke-width: 1px;
-  width: 27px;
-  height: 27px;
-  right: 13px;
+  width: 26px;
+  height: 26px;
+  right: 19px;
   top: 13px;
   position: absolute;
 }
@@ -83,18 +84,23 @@
 
 @media (min-width: $tablet-width) {
   .table {
-    @include wrapper;
-    width: 94%;
+    margin: 0 auto;
+    width: 100%;
   }
 
   .table__cell-head {
-    border: 2px solid #f2f2f2;
+    border: 2px solid #283645;
     font-size: 16px;
     padding: 8px 0;
+
+    &:last-child {
+      border-right-color: #283645;
+    }
   }
 
   .table__none {
     background-color: #f2f2f2;
+    border: transparent;
   }
 
   .table__first {
@@ -102,7 +108,7 @@
   }
 
   .table__wrap {
-    padding: 0;
+    padding: 0 20px;
     overflow: auto;
     margin-bottom: 49px;
   }

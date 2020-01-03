@@ -5,6 +5,10 @@
   text-transform: uppercase;
   margin: 0 auto;
   margin-bottom: 0;
+
+  &--opened {
+    margin-top: 24px;
+  }
 }
 
 .main-nav__toggle {
@@ -67,6 +71,10 @@
   .main-nav__toggle {
     top: 42px;
   }
+
+  .main-nav--opened {
+    margin-top: 41px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -75,8 +83,10 @@
     font-size: 18px;
     line-height: 18px;
     text-transform: none;
-    width: 625px;
-    margin: 29px 0 0 130px;
+    // width: 625px;
+    // margin: 29px 0 0 130px;
+    flex-grow: 1;
+    margin: 0 0 3px 30px;
   }
 
   .main-nav__toggle {
@@ -94,5 +104,8 @@
 
   .main-nav--closed .site-list__item {
     display: block;
+    width: auto;
+    padding: 0;
+    margin-left: 80px;
   }
 }

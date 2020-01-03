@@ -59,25 +59,12 @@
           </svg>
         </a>
         <nav class="main-nav main-nav--closed">
-          <button class="main-nav__toggle" type="button">
-            <!-- <svg class="main-nav__toggle-burger" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="49.945px" height="24.007px" viewBox="0 0 49.945 24.007" enable-background="new 0 0 49.945 24.007" xml:space="preserve">
-              <g id="miu">
-                <g id="editor_list_view_hambuger_menu_glyph">
-                  <g>
-                    <path id="path-1" fill="#FFFFFF" d="M1.137,0C0.51,0,0,0.428,0,1.01v1.981c0,0.558,0.494,1.01,1.139,1.01h47.671 c0.628,0,1.138-0.428,1.138-1.01V1.01c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,10.003C0.51,10.003,0,10.431,0,11.013v1.98 c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01v-1.98c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,20.005C0.51,20.005,0,20.434,0,21.016v1.981c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01 v-1.981c0-0.558-0.494-1.011-1.138-1.011H1.137z"/>
-                  </g>
-                  <g>
-                    <path id="path-1_1_" fill="#FFFFFF" d="M1.137,0C0.51,0,0,0.428,0,1.01v1.981c0,0.558,0.494,1.01,1.139,1.01h47.671 c0.628,0,1.138-0.428,1.138-1.01V1.01c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,10.003C0.51,10.003,0,10.431,0,11.013v1.98 c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01v-1.98c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,20.005C0.51,20.005,0,20.434,0,21.016v1.981c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01 v-1.981c0-0.558-0.494-1.011-1.138-1.011H1.137z"/>
-                  </g>
-                </g>
-              </g>
-            </svg> -->
-            <span class="visually-hidden">Меню</span></button>
+          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Меню</span></button>
           <ul class="main-nav__list site-list">
             <li class="site-list__item"><a class="site-list__link" href="index.html">Главная</a></li>
             <li class="site-list__item"><a class="site-list__link" href="photo.html">Фотографии</a></li>
             <li class="site-list__item"><a class="site-list__link site-list__link--active">Конкурс</a></li>
-            <li class="site-list__item"><a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">Html academy</a></li>
+            <li class="site-list__item"><a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">Html Academy</a></li>
           </ul>
         </nav>
       </section>
@@ -179,11 +166,11 @@
                   <input class="visually-hidden radio-list__check" id="mobile-os" name="os" type="radio" checked>
                   <label class="radio-list__achievement" for="mobile-os">Pink для iOS</label>
                 </li>
-                <li class="radio-list__item radio-list__check">
+                <li class="radio-list__item">
                   <input class="visually-hidden radio-list__check" id="mobile-android" name="os" type="radio">
                   <label class="radio-list__achievement" for="mobile-android">Pink на Android</label>
                 </li>
-                <li class="radio-list__item radio-list__check">
+                <li class="radio-list__item">
                   <input class="visually-hidden radio-list__check" id="mobile-windows" name="os" type="radio">
                   <label class="radio-list__achievement" for="mobile-windows">Windows Phone</label>
                 </li>
@@ -307,13 +294,22 @@
     <script>
       var navMain = document.querySelector('.main-nav');
       var navToggle = document.querySelector('.main-nav__toggle');
+      var header = document.querySelector('.page-header');
+      var navmargin = document.querySelector('.site-list');
+      var padeHadWr = document.querySelector('.page-header__wrapper');
       navToggle.addEventListener('click', function() {
         if (navMain.classList.contains('main-nav--closed')) {
           navMain.classList.remove('main-nav--closed');
           navMain.classList.add('main-nav--opened');
+          header.classList.add('page-header--active');
+          navmargin.classList.add('site-list--active');
+          padeHadWr.classList.add('page-header__wrapper--active')
         } else {
           navMain.classList.add('main-nav--closed');
           navMain.classList.remove('main-nav--opened');
+          header.classList.remove('page-header--active');
+          navmargin.classList.remove('site-list--active');
+          padeHadWr.classList.remove('page-header__wrapper--active')
         }
       });
     </script>
