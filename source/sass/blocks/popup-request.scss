@@ -1,9 +1,43 @@
+.popup-request {
+  width: 100%;
+  background-color: #ffffff;
+  display: none;
+  position: fixed;
+  top: 50%;
+}
+
+.popup-request__error {
+  @include wrapper;
+  width: 100%;
+  background-color: #ffffff;
+  display: none;
+  position: fixed;
+  top: 50%;
+}
+
 .popup-request__title {
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
+  text-align: center;
+  margin-bottom: 35px;
 }
 
 .popup-request__text {
   line-height: 24px;
+  text-align: center;
+  margin-bottom: 43px;
+}
+
+.popup__close-button {
+  background-color: #2aab6d;
+  width: 100%;
+  border-radius: 5%;
+  padding: auto 10px;
+  color: #ffffff;
+}
+
+.popup-request__close {
+  padding: 50px 0 50px 0;
+  background-color: #f2f2f2;
 }

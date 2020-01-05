@@ -1,17 +1,18 @@
 .photo-commentator {
-  padding: 18px 20px;
+  padding: 13px 18px;
   background-color: #f2f2f2;
 }
 
 .photo-commentator--pan {
   margin: 0 20px;
-  padding: 0 20px;
-  padding-top: 14px;
+  padding: 0 18px;
+  padding-top: 12px;
 }
 
 .photo-commentator__name {
   line-height: 24px;
   font-weight: 700;
+  vertical-align: bottom;
 }
 
 .photo-commentator__date {
@@ -19,11 +20,8 @@
   line-height: 24px;
   color: #283645;
   font-weight: 300;
-}
-
-.photo__text {
-  margin: 0;
-  max-height: 100px;
+  text-transform: uppercase;
+  vertical-align: bottom;
 }
 
 @media (min-width: $tablet-width) {
@@ -32,6 +30,7 @@
     padding: 20px 27px;
     display: flex;
     flex-wrap: wrap;
+    padding-bottom: 21px;
   }
 
   .photo-commentator--pan {

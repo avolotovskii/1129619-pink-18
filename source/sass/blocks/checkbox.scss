@@ -1,10 +1,12 @@
 .checkbox {
   background-color: #f2f2f2;
-  margin: 0 -20px;
+  margin: 0 -20px 32px;
+  padding: 0 0 48px;
 }
 
 .checkbox__name {
   padding-top: 40px;
+  font-weight: 400;
 }
 
 .checkbox__wrapper {
@@ -17,6 +19,11 @@
     border: 2px solid #e5e5e5;
     border-top: none;
     margin: 0 0 30px 0;
+    padding: 0 0 53px;
+  }
+
+  .checkbox__name-br {
+    display: none;
   }
 
   .checkbox__name {
@@ -51,5 +58,6 @@
 @media (min-width: $desktop-width) {
   .checkbox {
     width: 100%;
+    padding: 0;
   }
 }

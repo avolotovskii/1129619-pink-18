@@ -6,6 +6,10 @@
   text-align: center;
   padding: 103px 0 68px 0;
   min-height: 142px;
+
+  &--form {
+    padding: 103px 0 38px 0;
+  }
 }
 
 .page__title {
@@ -23,8 +27,13 @@
     background-image: url("/img/bg-back-tablet@1x.jpg");
     background-repeat: no-repeat;
     min-height: 306px;
-    padding-top: 181px;
-    padding-bottom: 140px;
+    padding-top: 169px;
+    padding-bottom: 126px;
+
+    &--form {
+      padding-top: 167px;
+      padding-bottom: 67px;
+    }
   }
 
   .page__title {
