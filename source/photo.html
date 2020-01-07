@@ -85,9 +85,11 @@
           </p>
           <ul class="photo__list">
             <li class="photo__item photo__item--pan">
-              <img class="photo__img-mobile photo__img-mobile--pan" src="/img/panorama-mobile@1x.jpg" alt="Панорама дня">
-              <img class="photo__img-tablet photo__img-tablet--pan" src="/img/panorama-tablet@1x.jpg" alt="Панорама дня">
-              <img class="photo__img-desktop photo__img-desktop--pan" src="/img/panorama-desktop@1x.jpg" alt="Панорама дня">
+              <picture>
+                <source media="(min-width: 960px)" srcset="/img/panorama-desktop@1x.jpg 1x, /img/panorama-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="/img/panorama-mobile@1x.jpg 1x, /img/panorama-mobile@1x.jpg 2x">
+                <img class="photo__img-mobile photo__img-mobile--pan" src="/img/panorama-mobile@1x.jpg" srcset="/img/panorama-mobile@1x.jpg 2x" alt="Панорама дня">
+              </picture>
               <p class="photo__pan">Панорама дня</p>
               <div class="photo-commentator photo-commentator--pan">
                 <b class="photo-commentator__name">
@@ -112,9 +114,11 @@
               </div>
             </li>
             <li class="photo__item">
-              <img class="photo__img-mobile" src="/img/photo-car-mobile@1x.jpg" alt="Панорама дня">
-              <img class="photo__img-tablet" src="/img/photo-car-tablet@1x.jpg" alt="Панорама дня">
-              <img class="photo__img-desktop" src="/img/photo-car-desktop@1x.jpg" alt="Панорама дня">
+              <picture>
+                <source media="(min-width: 960px)" srcset="/img/photo-car-desktop@1x.jpg 1x, /img/photo-car-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="/img/photo-car-tablet@1x.jpg 1x, /img/photo-car-tablet@2x.jpg 2x">
+                <img class="photo__img-mobile" src="/img/photo-car-mobile@1x.jpg" srcset="/img/photo-car-mobile@2x.jpg 2x" alt="Панорама дня">
+              </picture>
               <div class="photo-commentator">
                 <b class="photo-commentator__name">
                   Левон
@@ -136,9 +140,11 @@
               </div>
             </li>
             <li class="photo__item">
-              <img class="photo__img-mobile" src="/img/photo-drumset-mobile@1x.jpg" alt="Панорама дня">
-              <img class="photo__img-tablet" src="/img/photo-drumset-tablet@1x.jpg" alt="Панорама дня">
-              <img class="photo__img-desktop" src="/img/photo-drumset-desktop@1x.jpg" alt="Панорама дня">
+              <picture>
+                <source media="(min-width: 960px)" srcset="/img/photo-drumset-desktop@1x.jpg 1x, /img/photo-drumset-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="/img/photo-drumset-tablet@1x.jpg 1x, /img/photo-drumset-tablet@2x.jpg 2x">
+                <img class="photo__img-mobile" src="/img/photo-drumset-mobile@1x.jpg" srcset="/img/photo-drumset-mobile@2x.jpg 2x" alt="Панорама дня">
+              </picture>
               <div class="photo-commentator">
                 <b class="photo-commentator__name">
                   Антон
@@ -159,9 +165,11 @@
               </div>
             </li>
             <li class="photo__item">
-              <img class="photo__img-mobile" src="/img/photo-window-mobile@1x.jpg" alt="Панорама дня">
-              <img class="photo__img-tablet" src="/img/photo-window-tablet@1x.jpg" alt="Панорама дня">
-              <img class="photo__img-desktop" src="/img/photo-window-desktop@1x.jpg" alt="Панорама дня">
+              <picture>
+                <source media="(min-width: 960px)" srcset="/img/photo-window-desktop@1x.jpg 1x, /img/photo-window-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="/img/photo-window-tablet@1x.jpg 1x, /img/photo-window-tablet@2x.jpg 2x">
+                <img class="photo__img-mobile" src="/img/photo-window-mobile@1x.jpg" srcset="/img/photo-window-mobile@2x.jpg 2x" alt="Панорама дня">
+              </picture>
               <div class="photo-commentator">
                 <b class="photo-commentator__name">
                   Борис
