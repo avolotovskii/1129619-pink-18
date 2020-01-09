@@ -3,13 +3,8 @@
   text-align: center;
   display: block;
   padding: 57px 0 50px 0;
-  // overflow: hidden;
   position: relative;
 }
-
-// .tariffs__mask {
-//   background: #f2f2f2;
-// }
 
 .tariffs__mask::after {
   background: linear-gradient(to right bottom, transparent 49%, #f2f2f2 51%);
@@ -83,7 +78,7 @@
   }
 
   .tariffs {
-    padding: 39px 0 17px 0;
+    padding: 36px 0 17px 0;
   }
 
   .tariffs__mask::after {

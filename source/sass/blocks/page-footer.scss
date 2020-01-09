@@ -3,6 +3,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 40px;
 }
 
 .page-footer__social {
@@ -35,14 +36,14 @@
 
 .page-footer__develop {
   line-height: 18px;
-  width: 140px;
+  width: 134px;
   fill: #d22856;
   align-items: center;
   margin: auto;
   text-align: right;
   display: flex;
   justify-content: space-between;
-  margin-top: 24px;
+  margin-top: 18px;
 }
 
 .page-footer__develop:hover svg {
@@ -68,8 +69,8 @@
 }
 
 .page-footer__link-academy {
-  margin-left: 15px;
-  margin-top: 5px;
+  margin-left: 0;
+  margin-top: 7px;
 }
 
 .page-footer__logo-image-desk {
@@ -111,7 +112,7 @@
     text-align: right;
     display: flex;
     justify-content: flex-end;
-    margin-top: 34px;
+    margin-top: 30px;
   }
 
   .page-footer--index-mobile {
@@ -125,11 +126,16 @@
   .page-footer__logo-image-desk {
     display: none;
   }
+
+  .page-footer__link-academy {
+    margin-left: 15px;
+    margin-top: 7px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .page-footer {
-    margin-top: 0;
+    margin-top: 45px;
   }
 
   .page-footer__logo-image-desk {

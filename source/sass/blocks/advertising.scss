@@ -1,5 +1,5 @@
 .advertising {
-  background-color: #283645;
+  background-color: #1d2631;
   margin: 0 0 36px 0;
   text-align: center;
 }
@@ -16,6 +16,10 @@
   flex-direction: column;
   margin: 0 -20px;
   padding-top: 100px;
+
+  @media (min-resolution: $retina-dppx) {
+    background-color: url("/img/bg-back-mobile@2x.jpg");
+  }
 }
 
 .advertising__head {
@@ -42,6 +46,10 @@
   height: 286px;
   background-repeat: no-repeat;
   order: 1;
+
+  @media (min-resolution: $retina-dppx) {
+    background-image: url("/img/iphone-hand-mobile@2x.png");
+  }
 }
 
 .advertising__list {
@@ -49,7 +57,7 @@
   justify-content: start;
   padding: 0;
   align-items: flex-end;
-  margin: 15px 0 12px 37px;
+  margin: 15px 0 21px 37px;
 }
 
 .advertising__item {
@@ -95,10 +103,15 @@
     text-align: left;
     margin: 0 auto;
     position: relative;
-    min-height: 739px;
+    min-height: 730px;
     padding-top: 10px;
     overflow: hidden;
     z-index: 10;
+    background-position: 50% 0;
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("/img/bg-back-tablet@2x.jpg");
+    }
   }
 
   .advertising__item {
@@ -106,10 +119,10 @@
   }
 
   .advertising__button {
-    margin-bottom: 43px;
+    margin-bottom: 46px;
     width: 100%;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 25px;
   }
 
   .advertising__head {
@@ -141,6 +154,10 @@
     bottom: 0;
     background-position: 50%;
     z-index: -1;
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("/img/iphone-hand-tablet@2x.png");
+    }
   }
 
   .advertising__tablet-img {
@@ -163,7 +180,7 @@
   }
 
   .advertising__list {
-    margin: 0 0 29px;
+    margin: 0 0 37px;
     justify-content: center;
   }
 }
@@ -173,6 +190,10 @@
     background-image: url("/img/bg-back-desktop@1x.jpg");
     background-size: cover;
     background-position: 50%;
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("/img/bg-back-desktop@2x.jpg");
+    }
   }
 
   .adversting__background {
@@ -181,7 +202,7 @@
 
   .advertising__wrapper {
     position: relative;
-    min-height: 776px;
+    min-height: 844px;
     padding-top: 86px;
   }
 
@@ -195,6 +216,10 @@
     order: 1;
     right: -41px;
     bottom: 0;
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("/img/iphone-hand-desktop@2x.png");
+    }
   }
 
   .advertising__head {
@@ -206,10 +231,11 @@
   .adversting__tablet-block {
     padding-top: 60px;
     padding-bottom: 121px;
+    margin-top: -47px;
   }
 
   .advertising__button {
-    margin-bottom: 54px;
+    margin-bottom: 67px;
     margin-top: 51px;
     font-size: 21px;
     line-height: 18px;
@@ -218,5 +244,9 @@
   .advertising__comment {
     margin: 32px 0 0 0;
     padding-right: 5px;
+  }
+
+  .advertising__list {
+    margin: 0 0 55px;
   }
 }

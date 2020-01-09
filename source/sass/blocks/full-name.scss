@@ -26,8 +26,8 @@
 @media (min-width: $tablet-width) {
   .full-name {
     order: -5;
-    margin-bottom: 70px;
-    margin-top: 72px;
+    margin-bottom: 67px;
+    margin-top: 74px;
   }
 
   .full-name__text {
@@ -40,6 +40,10 @@
     &:last-child {
       margin: 0;
     }
+  }
+
+  .full-name__input {
+    padding-left: 19px;
   }
 }
 
