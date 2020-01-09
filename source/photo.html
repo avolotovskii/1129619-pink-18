@@ -8,6 +8,11 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap&subset=cyrillic" rel="stylesheet">
   </head>
   <body>
+    <svg style="display: none;">
+      <symbol viewBox="521.939 473.064 12.545 11.99" id="icon-like">
+        <path d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z"/>
+      </symbol>
+    </svg>
     <header class="page-header">
       <section class="page-header__wrapper">
         <a class="page-header__link-image">
@@ -85,7 +90,7 @@
           </p>
           <ul class="photo__list">
             <li class="photo__item photo__item--pan">
-              <picture>
+              <picture class="photo__img-tablet photo__img-tablet--pan">
                 <source media="(min-width: 960px)" srcset="/img/panorama-desktop@1x.jpg 1x, /img/panorama-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="/img/panorama-mobile@1x.jpg 1x, /img/panorama-mobile@1x.jpg 2x">
                 <img class="photo__img-mobile photo__img-mobile--pan" src="/img/panorama-mobile@1x.jpg" srcset="/img/panorama-mobile@1x.jpg 2x" alt="Панорама дня">
@@ -135,6 +140,9 @@
                     <g>
                       <path d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z"/>
                     </g>
+                  </svg>
+                  <svg fill="#d22856" class="photo__like-heart" width="12.545" height="11.99">
+                    <use xlink:href="#icon-like"/>
                   </svg>
                   Нравится: 356</button>
               </div>
@@ -194,7 +202,7 @@
               <picture>
                 <source media="(min-width: 960px)" srcset="/img/photo-fair-desktop@1x.jpg 1x, /img/photo-fair-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="/img/photo-fair-tablet@1x.jpg 1x, /img/photo-fair-tablet@2x.jpg 2x">
-                <img class="photo__img-mobile" src="/img/photo-fair-mobile@1x.jpg" srcset="/img/photo-fair-mobile@2x.jpg 2x" alt="Панорама дня">
+                <img class="photo__img-mobile" src="/img/photo-fair-mobile@1x.jpg 1x" srcset="/img/photo-fair-mobile@2x.jpg 2x" alt="Панорама дня">
               </picture>
               <div class="photo-commentator">
                 <b class="photo-commentator__name">
@@ -246,9 +254,6 @@
                 <source media="(min-width: 660px)" srcset="/img/photo-wing-tablet@1x.jpg 1x, /img/photo-wing-tablet@2x.jpg 2x">
                 <img class="photo__img-mobile" src="/img/photo-wing-mobile@1x.jpg" srcset="/img/photo-wing-mobile@2x.jpg 2x" alt="Панорама дня">
               </picture>
-              <img class="photo__img-mobile" src="/img/photo-wing-mobile@1x.jpg" alt="Панорама дня">
-              <img class="photo__img-tablet" src="/img/photo-wing-tablet@1x.jpg" alt="Панорама дня">
-              <img class="photo__img-desktop" src="/img/photo-wing-desktop@1x.jpg" alt="Панорама дня">
               <div class="photo-commentator">
                 <b class="photo-commentator__name">
                   Надежда
@@ -276,9 +281,11 @@
       <section class="put-out">
         <section class="put-out__wrapper">
           <form class="put-out__form" method="GET" action="https://echo.htmlacademy.ru">
-            <img class="put-out__img-mobile" src="/img/photo-road-mobile@1x.jpg" alt="Ваше фото">
-            <img class="put-out__img-tablet" src="/img/photo-road-tablet@1x.jpg" alt="Ваше фото">
-            <img class="put-out__img-desktop" src="/img/photo-road-desktop@1x.jpg" alt="Ваше фото">
+            <picture>
+              <source media="(min-width: 960px)" srcset="/img/photo-road-desktop@1x.jpg 1x, /img/photo-road-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="/img/photo-road-tablet@1x.jpg 1x, /img/photo-road-tablet@2x.jpg 2x">
+              <img class="put-out__img-mobile" src="/img/photo-road-mobile@1x.jpg" srcset="/img/photo-road-mobile@2x.jpg 2x" alt="Ваше фото">
+            </picture>
             <div class="put-out__right-block">
               <ul class="put-out__list">
                 <li class="put-out__item put-out__item--active put-out__crop">
