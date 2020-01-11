@@ -65,6 +65,7 @@
     height: 62px;
     background-position: 50%;
     background-color: #e5e5e5;
+    pointer-events: none;
   }
 
   .contest-contact__email::after {
@@ -78,6 +79,7 @@
     height: 62px;
     background-position: 50%;
     background-color: #e5e5e5;
+    pointer-events: none;
   }
 
   .contest-contact__title {
@@ -148,16 +150,18 @@
   }
 
   .contest-contact__input {
-    width: 375px;
+    width: 314px;
     padding-left: 19px;
   }
 
   .contest-contact__number::after {
     right: 59px;
+    bottom: 35px;
   }
 
   .contest-contact__email::after {
     right: 59px;
+    bottom: 35px;
   }
 
   .contest-contact__text {

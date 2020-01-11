@@ -130,7 +130,7 @@
   .photo__item {
     width: 300px;
     margin-right: 0;
-    margin-bottom: 27px;
+    margin-bottom: 24px;
 
     &:nth-child(2n) {
       margin-right: 20px;
@@ -224,6 +224,10 @@
   .photo__pan {
     top: 57px;
     right: 0;
+  }
+
+  .photo__img-tablet--pan img {
+    height: 100%;
   }
 }
 

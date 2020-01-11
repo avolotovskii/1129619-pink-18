@@ -120,10 +120,9 @@
     margin-bottom: 0;
   }
 
-  // .put-out__img-mobile,
-  // .put-out__img-desktop {
-  //   display: none;
-  // }
+  .put-out__img img {
+    min-width: 298px;
+  }
 
   .put-out__img-tablet {
     display: block;
@@ -153,7 +152,7 @@
 
   .put-out__right-block {
     width: 50%;
-    margin-left: 47px;
+    margin-left: 38px;
     margin-top: 9px;
   }
 
@@ -185,6 +184,7 @@
   .put-out__buttons {
     border-top: none;
     padding-top: 29px;
+    padding-left: 12px;
   }
 
   .put-out__button-sent,
@@ -230,8 +230,8 @@
   }
 
   .put-out__right-block {
-    margin-left: 90px;
     margin-top: 0;
+    margin-left: 80px;
   }
 
   .put-out__button-img {
@@ -247,5 +247,9 @@
 
   .put-out__button-sent {
     width: 40%;
+  }
+
+  .put-out__img {
+    margin-left: 81px;
   }
 }
