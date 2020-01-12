@@ -23,6 +23,10 @@
   font-weight: 400;
 }
 
+.contest-contact__input {
+  border: 1px solid #e5e5e5;;
+}
+
 @media (min-width: $tablet-width) {
   .contest-contact {
     border: 2px solid #e5e5e5;

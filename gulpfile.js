@@ -15,6 +15,7 @@ var svgstore = require("gulp-svgstore");
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var del = require("del");
+// var nano = require("minify");
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
@@ -99,10 +100,16 @@ gulp.task("clean", function () {
   return del("build");
 });
 
+// gulp.task("nanocss", function () {
+//   return gulp.src("build/css")
+//     .pipe(gulp.dest("build/img"));
+// });
+
 gulp.task("build", gulp.series(
   "clean",
   "copy",
   "css",
+  // "nanocss",
   "sprite",
   "html"));
 gulp.task("start", gulp.series("build", "server"));

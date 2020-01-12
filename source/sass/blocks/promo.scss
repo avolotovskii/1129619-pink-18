@@ -135,6 +135,7 @@
 
   .promo__advantages {
     padding-bottom: 175px;
+    display: block;
   }
 
   .promo__list-mobile,
@@ -153,7 +154,13 @@
 
   .promo__head {
     @include wrapper;
-    margin-bottom: 165px;
+    margin-bottom: 81px;
+  }
+
+  .promo__advantages-mask {
+    display: block;
+    max-width: 960px;
+    padding: 0 10px;
   }
 
   .promo__advantages-mask::after {
