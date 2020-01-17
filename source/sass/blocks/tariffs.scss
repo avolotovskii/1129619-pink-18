@@ -49,8 +49,11 @@
 
 .tariffs__toggles {
   padding-left: 0;
-  justify-content: center;
   margin-bottom: -7px;
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  margin-top: -22px;
 }
 
 @media (min-width: $tablet-width) {

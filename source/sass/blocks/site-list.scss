@@ -56,7 +56,15 @@
     color: #d22856;
   }
 
+  .site-list__link--active:hover {
+    color: #ffffff;
+  }
+
   .site-list__link:active {
     color: rgba(255, 255, 255, 0.3);
+  }
+
+  .site-list__link--active:active {
+    color: #ffffff;
   }
 }

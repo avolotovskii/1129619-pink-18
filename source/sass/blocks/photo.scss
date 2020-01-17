@@ -158,13 +158,13 @@
   }
 
   .photo__img-mobile--pan {
-    width: auto;
-    transform: translate(-19px, 0px);
+    width: 100%;
+    transform: translate(-19px, 0);
   }
 
   .photo__img-tablet--pan {
     display: block;
-    width: 100vw;
+    width: 106vw;
     height: 89%;
     max-width: none;
     position: relative;
@@ -205,6 +205,8 @@
     margin-right: 0;
     margin-left: auto;
     order: -1;
+    justify-content: end;
+    width: 130px;
   }
 
   .photo__title {
@@ -234,7 +236,8 @@
   }
 
   .photo__img-tablet--pan img {
-    height: 100%;
+    height: auto;
+    min-height: 509px;
   }
 }
 
@@ -274,7 +277,6 @@
 
   .photo__item:nth-child(3n+1) {
     margin-right: 0;
-    padding-bottom: 28px;
   }
 
   .photo__item--pan {
