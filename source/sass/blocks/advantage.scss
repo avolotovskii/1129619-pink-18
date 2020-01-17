@@ -44,6 +44,10 @@
   display: none;
 }
 
+.advantage__img-desktop {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .advantage {
     text-align: left;
@@ -77,7 +81,6 @@
   .advantage {
     flex-direction: row;
     justify-content: center;
-    margin: -83px 0 0 4px;
     background: none;
     margin: 0;
   }
@@ -127,5 +130,19 @@
 
   .advantage__screen-1 {
     display: block;
+  }
+
+  .advantage__screen-2 {
+    display: none;
+  }
+
+  .advantage__img-desktop {
+    width: 288px;
+    display: block;
+    top: 0;
+    left: 21px;
+    position: relative;
+    margin-top: 0;
+    margin-bottom: -38px;
   }
 }

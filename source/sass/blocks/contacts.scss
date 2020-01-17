@@ -163,17 +163,20 @@
   .contacts__map img {
     width: auto;
     transform: translate(-20px, -346px);
-  };
+  }
 }
 
 @media (min-width: $desktop-width) {
   .contacts {
-    @include wrapper;
     padding: 61px 0 0 0;
     margin-bottom: 30px;
     line-height: 30px;
-    margin-top: 61px;
+    margin-top: 0;
     overflow: auto;
+  }
+
+  .contacts__wrapper {
+    @include wrapper;
   }
 
   .contacts__text {
@@ -215,7 +218,8 @@
   }
 
   .contacts__map {
-    overflow: auto;
+    overflow: hidden;
+    min-height: 505px;
   }
 
   .contacts__map img {
@@ -243,5 +247,9 @@
     background-size: 100%;
     border-style: contain;
     background-position: 50% 0;
+  }
+
+  .contacts__method {
+    width: 297px;
   }
 }
