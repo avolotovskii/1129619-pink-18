@@ -9,7 +9,7 @@
 
 .photo__title {
   text-align: center;
-  width: 235px;
+  width: 245px;
   margin: 0 auto;
   margin-top: 45px;
   margin-bottom: 51px;
@@ -65,7 +65,6 @@
   padding-left: 0;
   text-transform: uppercase;
   padding-bottom: 18px;
-  padding-top: 0;
 }
 
 .photo__panorama-mobile {
@@ -252,12 +251,9 @@
     transform: translateX(-50%);
   }
 
-  .photo__img-tablet--pan img {
-    height: 509px;
-  }
-
   .photo__list {
-    margin: 0 0 4px;
+    height: 1820px;
+    margin: 0 0 55px;
   }
 
   .photo__text {
@@ -277,7 +273,6 @@
 
   .photo__item {
     margin-right: 20px;
-    margin-bottom: 64px;
   }
 
   .photo__item:nth-child(3n+1) {
@@ -287,7 +282,6 @@
   .photo__item--pan {
     margin: 0 0 50px;
     width: 100%;
-    padding-bottom: 17px;
   }
 
   .photo__title {

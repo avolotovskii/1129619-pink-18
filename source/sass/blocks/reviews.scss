@@ -8,7 +8,7 @@
   list-style: none;
   padding: 0;
   overflow: hidden;
-  // height: 280px;
+  height: 280px;
   margin: 0 auto;
 }
 
@@ -25,7 +25,7 @@
   display: flex;
   list-style: none;
   justify-content: center;
-  margin-top: 5px;
+  margin-top: -22px;
 }
 
 .reviews__text {
@@ -83,13 +83,13 @@
   }
 
   .reviews__toggles {
-    margin-top: 26px;
+    margin-top: -72px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .reviews {
-    margin-bottom: 122px;
+    margin-bottom: 139px;
     margin-top: -48px;
     position: relative;
   }
@@ -112,19 +112,18 @@
 
   .reviews__text {
     width: 694px;
-    // display: flex;
-    // flex-direction: column;
-    // align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .reviews__list {
     position: relative;
-    overflow: visible;
+    overflow: unset;
   }
 
   .reviews__quotes {
     display: block;
-    margin: 0 auto;
     margin-bottom: 49px;
   }
 
