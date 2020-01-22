@@ -1,28 +1,79 @@
 .range-controls__bar {
-  // flex-direction: column;
   display: none;
   appearance: none;
-  border-radius: 2px;
-  width: 600px;
-  height: 2px;
-  outline: none;
-  position: relative;
-  border: 1px solid #000000;
-  top: 19px;
-}
+  background-color: transparent;
 
-.range-controls__bar::-webkit-slider-thumb {
-  appearance: none;
-  width: 14px;
-  height: 14px;
-  background: #f2f2f2;
-  border-radius: 18px;
-  cursor: pointer;
-  border: 2px solid #d22856;
-  position: relative;
+  &::-webkit-slider-runnable-track {
+    appearance: none;
+    border-radius: 2px;
+    width: 600px;
+    height: 2px;
+    outline: none;
+    position: static;
+    border: 1px solid #000000;
+    top: 19px;
+    cursor: pointer;
+  }
 
-  &:active {
-    background: #d22856;
+  &::-webkit-slider-thumb {
+    appearance: none;
+    cursor: pointer;
+    margin-top: -7px;
+    width: 14px;
+    height: 14px;
+    background: #f2f2f2;
+    border-radius: 18px;
+    border: 2px solid #d22856;
+    position: relative;
+
+    &:active {
+      background: #d22856;
+    }
+  }
+
+  &::-ms-track {
+    width: 100%;
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+    height: 14.2px;
+    border-width: 8px 0;
+  }
+
+  &::-ms-thumb {
+    border: 2px solid #d22856;
+    height: 14px;
+    width: 14px;
+    border-radius: 50%;
+    background: #ffffff;
+    cursor: pointer;
+
+    &:active {
+      background: #d22856;
+    }
+  }
+
+  &::-ms-fill-lower {
+    background: #000000;
+    border: none;
+    border-radius: 2px;
+    height: 2px;
+  }
+
+  &:focus::-ms-fill-lower {
+    background: #000000;
+  }
+
+  &::-ms-fill-upper {
+    background: #000000;
+    border: none;
+    border-radius: 2px;
+    height: 2px;
+  }
+
+  &:focus::-ms-fill-upper {
+    background: #000000;
   }
 }
 
@@ -34,31 +85,6 @@
   display: block;
   margin-left: 17px;
   top: 85px;
-
-  &:active {
-    background: #d22856;
-  }
-}
-
-.range-controls__bar--active::-ms-track {
-  position: absolute;
-  left: 0;
-  width: 86%;
-  bottom: 10px;
-  display: block;
-  margin-left: 17px;
-  top: 85px;
-}
-
-.range-controls__bar::-ms-thumb {
-  appearance: none;
-  width: 14px;
-  height: 14px;
-  background: #f2f2f2;
-  border-radius: 18px;
-  cursor: pointer;
-  border: 2px solid #d22856;
-  position: relative;
 }
 
 @media (min-width: $tablet-width) {
@@ -71,7 +97,7 @@
 
   .range-controls__bar--active {
     position: relative;
-    top: 11px;
+    top: 0;
   }
 }
 
@@ -79,6 +105,6 @@
   .range-controls__bar {
     width: 62%;
     margin-left: 47px;
-    top: 19px;
+    top: -3px;
   }
 }
