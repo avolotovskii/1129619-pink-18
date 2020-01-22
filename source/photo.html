@@ -9,7 +9,10 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <svg style="display: none;">
+    <div style="display:none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
+    <svg style="display: none">
       <symbol viewBox="521.939 473.064 12.545 11.99" id="icon-like">
         <path d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z"></path>
       </symbol>
@@ -21,9 +24,6 @@
       </symbol>
       <symbol viewBox="0 0 8.673 18.944" id="icon-fb">
         <path d="M6.275,3.357c0.799,0,1.599,0,2.398,0c0-1.119,0-2.238,0-3.357c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.115 H0v3.517h1.958c0,3.104,0,6.208,0,9.312c1.279,0,2.558,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.115H5.786 C5.765,5.07,5.75,3.709,6.275,3.357z"></path>
-      </symbol>
-      <symbol viewBox="0 0 14.64 13.96" id="icon-youtube">
-        <path d="M1.775,13.78C0.799,14.257,0,13.758,0,12.671V1.29c0-1.088,0.799-1.585,1.775-1.109l12.133,5.932 c0.975,0.478,0.975,1.258,0,1.736L1.775,13.78z"></path>
       </symbol>
       <symbol viewBox="0 0 48 48" id="icon-crop">
         <path d="M34,30h4V14c0-2.21-1.79-4-4-4H18v4h16V30z M14,34V2h-4v8H2v4h8v20c0,2.21,1.79,4,4,4h20v8h4v-8h8v-4H14z"></path>
@@ -137,7 +137,7 @@
                 </p>
                 <button class="photo__like photo__like--pan" type="button">
                   <svg fill="#d22856" class="photo__like-heart" width="12" height="12">
-                    <use xlink:href="#icon-like"></use>
+                    <use xlink:href="#icon-heart"></use>
                   </svg>
                   Нравится: 215</button>
               </div>
@@ -150,24 +150,22 @@
               </picture>
               <div class="photo-commentator">
                 <div>
-                  <div>
-                    <b class="photo-commentator__name">
-                      Левон
-                    </b>
-                    <time class="photo-commentator__date" datetime="2012-12-23T08:23:11+07:00">
-                      <span>(5 часов назад)</span>
-                    </time>
-                  </div>
-                  <p class="photo__text">
-                    Вчера он на луну летал, сегодня в
-                    руки к нам попал
-                  </p>
-                  <button class="photo__like" type="button">
-                    <svg fill="#d22856" class="photo__like-heart" width="12" height="12">
-                      <use xlink:href="#icon-like"></use>
-                    </svg>
-                    Нравится: 356</button>
+                  <b class="photo-commentator__name">
+                    Левон
+                  </b>
+                  <time class="photo-commentator__date" datetime="2012-12-23T08:23:11+07:00">
+                    <span>(5 часов назад)</span>
+                  </time>
                 </div>
+                <p class="photo__text">
+                  Вчера он на луну летал, сегодня в
+                  руки к нам попал
+                </p>
+                <button class="photo__like" type="button">
+                  <svg fill="#d22856" class="photo__like-heart" width="12" height="12">
+                    <use xlink:href="#icon-heart"></use>
+                  </svg>
+                  Нравится: 356</button>
               </div>
             </li>
             <li class="photo__item">
@@ -178,23 +176,21 @@
               </picture>
               <div class="photo-commentator">
                 <div>
-                  <div>
-                    <b class="photo-commentator__name">
-                      Антон
-                    </b>
-                    <time class="photo-commentator__date" datetime="2012-12-23T08:23:11+07:00">
-                      <span>(12 часов назад)</span>
-                    </time>
-                  </div>
-                  <p class="photo__text">
-                    Соседи будут рады!
-                  </p>
-                  <button class="photo__like" type="button">
-                    <svg fill="#d22856" class="photo__like-heart" width="12" height="12">
-                      <use xlink:href="#icon-like"></use>
-                    </svg>
-                    Нравится: 666</button>
+                  <b class="photo-commentator__name">
+                    Антон
+                  </b>
+                  <time class="photo-commentator__date" datetime="2012-12-23T08:23:11+07:00">
+                    <span>(12 часов назад)</span>
+                  </time>
                 </div>
+                <p class="photo__text">
+                  Соседи будут рады!
+                </p>
+                <button class="photo__like" type="button">
+                  <svg fill="#d22856" class="photo__like-heart" width="12" height="12">
+                    <use xlink:href="#icon-heart"></use>
+                  </svg>
+                  Нравится: 666</button>
               </div>
             </li>
             <li class="photo__item">
@@ -205,24 +201,22 @@
               </picture>
               <div class="photo-commentator">
                 <div>
-                  <div>
-                    <b class="photo-commentator__name">
-                      Борис
-                    </b>
-                    <time class="photo-commentator__date" datetime="2012-12-23T08:23:11+07:00">
-                      <span>(20 часов назад)</span>
-                    </time>
-                  </div>
-                  <p class="photo__text">
-                    Здесь могла быть ваша цитата о
-                    высоком и вечном
-                  </p>
-                  <button class="photo__like" type="button">
-                    <svg fill="#d22856" class="photo__like-heart" width="12" height="12">
-                      <use xlink:href="#icon-like"></use>
-                    </svg>
-                    Нравится: 215</button>
+                  <b class="photo-commentator__name">
+                    Борис
+                  </b>
+                  <time class="photo-commentator__date" datetime="2012-12-23T08:23:11+07:00">
+                    <span>(20 часов назад)</span>
+                  </time>
                 </div>
+                <p class="photo__text">
+                  Здесь могла быть ваша цитата о
+                  высоком и вечном
+                </p>
+                <button class="photo__like" type="button">
+                  <svg fill="#d22856" class="photo__like-heart" width="12" height="12">
+                    <use xlink:href="#icon-heart"></use>
+                  </svg>
+                  Нравится: 215</button>
               </div>
               </li>
             <li class="photo__item">
@@ -233,23 +227,21 @@
               </picture>
               <div class="photo-commentator">
                 <div>
-                  <div>
-                    <b class="photo-commentator__name">
-                      Сергей
-                    </b>
-                    <time class="photo-commentator__date" datetime="2012-12-23T08:23:11+07:00">
-                      <span>(25 часов назад)</span>
-                    </time>
-                  </div>
-                  <p class="photo__text">
-                    Самая кубанская в мире!
-                  </p>
-                  <button class="photo__like" type="button">
-                    <svg fill="#d22856" class="photo__like-heart" width="12" height="12">
-                      <use xlink:href="#icon-like"></use>
-                    </svg>
-                    Нравится: 4</button>
+                  <b class="photo-commentator__name">
+                    Сергей
+                  </b>
+                  <time class="photo-commentator__date" datetime="2012-12-23T08:23:11+07:00">
+                    <span>(25 часов назад)</span>
+                  </time>
                 </div>
+                <p class="photo__text">
+                  Самая кубанская в мире!
+                </p>
+                <button class="photo__like" type="button">
+                  <svg fill="#d22856" class="photo__like-heart" width="12" height="12">
+                    <use xlink:href="#icon-like"></use>
+                  </svg>
+                  Нравится: 4</button>
               </div>
             </li>
             <li class="photo__item">
@@ -260,23 +252,21 @@
               </picture>
               <div class="photo-commentator">
                 <div>
-                  <div>
-                    <b class="photo-commentator__name">
-                      Максим
-                    </b>
-                    <time class="photo-commentator__date" datetime="2012-12-23T08:23:11+07:00">
-                      <span>(40 часов назад)</span>
-                    </time>
-                  </div>
-                  <p class="photo__text">
-                    Где снег-то?
-                  </p>
-                  <button class="photo__like" type="button">
-                    <svg fill="#d22856" class="photo__like-heart" width="12" height="12">
-                      <use xlink:href="#icon-like"></use>
-                    </svg>
-                    Нравится: 150</button>
+                  <b class="photo-commentator__name">
+                    Максим
+                  </b>
+                  <time class="photo-commentator__date" datetime="2012-12-23T08:23:11+07:00">
+                    <span>(40 часов назад)</span>
+                  </time>
                 </div>
+                <p class="photo__text">
+                  Где снег-то?
+                </p>
+                <button class="photo__like" type="button">
+                  <svg fill="#d22856" class="photo__like-heart" width="12" height="12">
+                    <use xlink:href="#icon-like"></use>
+                  </svg>
+                  Нравится: 150</button>
               </div>
             </li>
             <li class="photo__item">
@@ -287,23 +277,21 @@
               </picture>
               <div class="photo-commentator">
                 <div>
-                  <div>
-                    <b class="photo-commentator__name">
-                      Надежда
-                    </b>
-                    <time class="photo-commentator__date" datetime="2012-12-23T08:23:11+07:00">
-                      <span>(45 часов назад)</span>
-                    </time>
-                  </div>
-                  <p class="photo__text">
-                    Всем GM и взаимные лайки!
-                  </p>
-                  <button class="photo__like" type="button">
-                    <svg fill="#d22856" class="photo__like-heart" width="12" height="12">
-                      <use xlink:href="#icon-like"></use>
-                    </svg>
-                    Нравится: 2560</button>
+                  <b class="photo-commentator__name">
+                    Надежда
+                  </b>
+                  <time class="photo-commentator__date" datetime="2012-12-23T08:23:11+07:00">
+                    <span>(45 часов назад)</span>
+                  </time>
                 </div>
+                <p class="photo__text">
+                  Всем GM и взаимные лайки!
+                </p>
+                <button class="photo__like" type="button">
+                  <svg fill="#d22856" class="photo__like-heart" width="12" height="12">
+                    <use xlink:href="#icon-like"></use>
+                  </svg>
+                  Нравится: 2560</button>
               </div>
             </li>
           </ul>
@@ -315,9 +303,11 @@
         <section class="put-out__wrapper">
           <form class="put-out__form" method="GET" action="https://echo.htmlacademy.ru">
             <div class="put-out__img">
-              <source media="(min-width: 960px)" srcset="/img/photo-road-desktop@1x.jpg 1x, /img/photo-road-desktop@2x.jpg 2x">
+              <picture>
+                <source media="(min-width: 960px)" srcset="/img/photo-road-desktop@1x.jpg 1x, /img/photo-road-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="/img/photo-road-tablet@1x.jpg 1x, /img/photo-road-tablet@2x.jpg 2x">
                 <img src="/img/photo-road-mobile@1x.jpg" srcset="/img/photo-road-mobile@2x.jpg 2x" alt="Ваше фото">
+              </picture>
             </div>
             <div class="put-out__right-block">
               <ul class="put-out__list">
